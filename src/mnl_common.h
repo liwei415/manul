@@ -81,6 +81,8 @@ struct mnl_vars_s {
   int max_size;
   mnl_cbs_headers_conf_t *headers;
   mnl_access_conf_t *access;
+  char remote_ip[128];
+  int remote_port;
 };
 
 extern mnl_vars_t vars;

@@ -15,6 +15,7 @@
 #include "mnl_access.h"
 #include "mnl_utils.h"
 #include "mnl_cbs_test.h"
+#include "mnl_cbs_usra.h"
 
 #include "mnl_common.h"
 

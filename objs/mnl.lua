@@ -45,3 +45,9 @@ log_path = pwd .. '/mnl.log'
 
 --请求数据大小限制，默认10MB
 max_size = 10*1024*1024
+
+--remote server config
+--绑定IP
+remote_ip = '127.0.0.1'
+--端口
+remote_port = 9528

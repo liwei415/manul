@@ -116,6 +116,18 @@ static int load_conf(const char *conf)
   }
   lua_pop(L, 1);
 
+  lua_getglobal(L, "remote_ip");
+  if(lua_isstring(L, -1)) {
+    mnl_strlcpy(vars.remote_ip, lua_tostring(L, -1), sizeof(vars.remote_ip));
+  }
+  lua_pop(L, 1);
+
+  lua_getglobal(L, "remote_port");
+  if(lua_isnumber(L, -1)) {
+    vars.remote_port = (int)lua_tonumber(L, -1);
+  }
+  lua_pop(L, 1);
+
   vars.L = L;
   //lua_close(L);
 
@@ -179,8 +191,11 @@ int main()
   // index
   evhtp_set_cb(htp, "/index", mnl_cbs_index, NULL);
 
-  // image
+  // test
   evhtp_set_cb(htp, "/test", mnl_cbs_test_post, NULL);
+
+  // 用户开户 USRA
+  evhtp_set_cb(htp, "/usra", mnl_cbs_usra_post, NULL);
 
   // all other
   evhtp_set_gencb(htp, mnl_cbs_index, NULL);

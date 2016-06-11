@@ -19,6 +19,11 @@ struct mnl_req_test_s {
   thr_arg_t *thr_arg;
 };
 
+typedef struct mnl_res_test_s mnl_res_test_t;
+struct mnl_res_test_s {
+  char *test;
+};
+
 void mnl_cbs_test_post(evhtp_request_t *req, void *arg);
 
 #endif

@@ -36,14 +36,14 @@ static const char *post_error_list[] = {
   "Wrong Json Node."
 };
 
-int _jreturn(evhtp_request_t *req, int err_no, mnl_req_test_t *mnl_req)
+int _jreturn(evhtp_request_t *req, int err_no, mnl_res_test_t *mnl_res)
 {
   //json sample:
   cJSON *j_ret = cJSON_CreateObject();
   cJSON *j_ret_info = cJSON_CreateObject();
   if(err_no == -1) {
     cJSON_AddBoolToObject(j_ret, "ret", 1);
-    cJSON_AddStringToObject(j_ret_info, "md5", mnl_req->md5);
+    cJSON_AddStringToObject(j_ret_info, "md5", mnl_res->test);
     cJSON_AddItemToObject(j_ret, "info", j_ret_info);
   }
   else {
@@ -72,6 +72,7 @@ void mnl_cbs_test_post(evhtp_request_t *req, void *arg)
   int err_no = 0;
 
   mnl_req_test_t *mnl_req = NULL;
+  mnl_res_test_t *mnl_res = NULL;
 
   evhtp_connection_t *ev_conn = evhtp_request_get_connection(req);
   struct sockaddr *saddr = ev_conn->saddr;
@@ -170,6 +171,7 @@ void mnl_cbs_test_post(evhtp_request_t *req, void *arg)
   mnl_req = (mnl_req_test_t *)calloc(1, sizeof(mnl_req_test_t));
   mnl_req->thr_arg = thr_arg;
 
+  // 处理json输入
   cJSON *root, *chd;
   if((root = cJSON_Parse(buff)) == NULL) {
     err_no = 11;
@@ -185,9 +187,23 @@ void mnl_cbs_test_post(evhtp_request_t *req, void *arg)
   mnl_strlcpy(md5, chd->valuestring, strlen(chd->valuestring) + 1);
   mnl_req->md5 = md5;
 
-  err_no = -1;
+  // 业务逻辑处理
+  // 1.build 请求包
 
-  _jreturn(req, err_no, mnl_req);
+  // 2.远端服务器交互
+  //  int sockfd = mnl_net_conn(vars.remote_ip, vars.remote_port);
+
+  // 3.dissect 返回包
+
+
+  mnl_res = (mnl_res_test_t *)calloc(1, sizeof(mnl_res_test_t));
+  mnl_res->test = calloc(32, sizeof(char));
+  strcpy(mnl_res->test, "helloaaaa!");
+
+
+  //业务逻辑处理成功
+  err_no = -1;
+  _jreturn(req, -1, mnl_res);
   evhtp_headers_add_header(req->headers_out, evhtp_header_new("Server", vars.server_name, 0, 1));
   evhtp_send_reply(req, EVHTP_RES_OK);
   LOG_PRINT(LOG_DEBUG, "============test DONE!===============");

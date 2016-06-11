@@ -99,3 +99,57 @@ size_t mnl_strlcpy(char *dst, const char *src, size_t size) {
 
   return (srclen);
 }
+
+// copy two strings file blank on the right.
+size_t mnl_cpy_str(char *dst, const char *src, size_t size) {
+
+  size_t slen = strlen(src);
+  if (slen > size) {
+    slen = size;
+  }
+  memcpy(dst, src, slen);
+
+  size_t i;
+  for (i = slen; i < size; i++) {
+    *(dst+i) = ' ';
+  }
+  return (slen);
+}
+
+// copy two strings file '0' on the left.
+size_t mnl_cpy_int(char *dst, const char *src, size_t size) {
+
+  size_t slen = strlen(src);
+  if (slen > size) {
+    slen = size;
+  }
+
+  size_t i, j;
+  // 补0
+  for (i = 0; i < size - slen; i++) {
+    dst[i] = '0';
+  }
+
+  for (i = size - slen, j = 0; i < size; i++, j++) {
+    *(dst+i) = *(src+j);
+  }
+  return (slen);
+}
+
+// copy two strings file blank on the right.
+size_t mnl_cpy_hex(char *dst, const char *src, size_t size) {
+  size_t srclen;
+  // Figure out how much room is needed...
+  size --;
+  srclen = strlen(src);
+
+  // Copy the appropriate amount...
+  if (srclen > size) {
+    srclen = size;
+  }
+
+  memcpy(dst, src, srclen);
+  dst[srclen] = '\0';
+
+  return (srclen);
+}

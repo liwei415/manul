@@ -717,3 +717,635 @@
 2016/06/06 19:03:58:386246 [DEBUG] h2
 2016/06/06 19:03:58:386268 [DEBUG] ============test DONE!===============
 2016/06/06 19:03:58:386286 [DEBUG] h3
+2016/06/09 22:10:49:427106 [DEBUG] Paths Init Finished.
+2016/06/09 22:10:49:430193 [DEBUG] Begin to Start Httpd Server...
+2016/06/09 22:10:49:430266 [INFO] mnl started
+2016/06/09 22:10:49:430605 [DEBUG] thr_args alloc
+2016/06/09 22:10:49:430679 [DEBUG] luaL_newstate alloc
+2016/06/09 22:10:49:435827 [DEBUG] thr_args alloc
+2016/06/09 22:10:49:435924 [DEBUG] luaL_newstate alloc
+2016/06/09 22:11:25:846553 [DEBUG] Method: 2
+2016/06/09 22:11:25:846630 [DEBUG] rules: 0x1db14c0
+2016/06/09 22:11:25:846660 [DEBUG] addr: 0
+2016/06/09 22:11:25:846684 [DEBUG] rules->value->addr: 1862379712
+2016/06/09 22:11:25:846707 [DEBUG] rules->value->mask: -1
+2016/06/09 22:11:25:846730 [DEBUG] addr: 0
+2016/06/09 22:11:25:846752 [DEBUG] rules->value->addr: 764096
+2016/06/09 22:11:25:846775 [DEBUG] rules->value->mask: 16777215
+2016/06/09 22:11:25:846798 [DEBUG] addr: 0
+2016/06/09 22:11:25:846821 [DEBUG] rules->value->addr: 0
+2016/06/09 22:11:25:846843 [DEBUG] rules->value->mask: -1
+2016/06/09 22:11:25:846866 [DEBUG] access check: 0
+2016/06/09 22:11:25:846891 [DEBUG] evblen = 131
+2016/06/09 22:11:25:846918 [DEBUG] rmblen = 131
+2016/06/09 22:11:25:846952 [DEBUG] post_error_list[12]: Wrong Json Node.
+2016/06/09 22:11:25:846987 [DEBUG] ret_str_unformat: {"ret":false,"error":{"code":12,"message":"Wrong Json Node."}}
+2016/06/09 22:11:25:847032 [DEBUG] ============test ERROR!===============
+2016/06/09 22:13:43:957898 [DEBUG] Method: 2
+2016/06/09 22:13:43:957976 [DEBUG] rules: 0x1db14c0
+2016/06/09 22:13:43:958006 [DEBUG] addr: 0
+2016/06/09 22:13:43:958047 [DEBUG] rules->value->addr: 1862379712
+2016/06/09 22:13:43:958071 [DEBUG] rules->value->mask: -1
+2016/06/09 22:13:43:958094 [DEBUG] addr: 0
+2016/06/09 22:13:43:958116 [DEBUG] rules->value->addr: 764096
+2016/06/09 22:13:43:958138 [DEBUG] rules->value->mask: 16777215
+2016/06/09 22:13:43:958159 [DEBUG] addr: 0
+2016/06/09 22:13:43:958181 [DEBUG] rules->value->addr: 0
+2016/06/09 22:13:43:958203 [DEBUG] rules->value->mask: -1
+2016/06/09 22:13:43:958225 [DEBUG] access check: 0
+2016/06/09 22:13:43:958248 [DEBUG] evblen = 42
+2016/06/09 22:13:43:958272 [DEBUG] rmblen = 42
+2016/06/09 22:13:43:958309 [DEBUG] ret_str_unformat: {"ret":true,"info":{"md5":"helloaaaa!"}}
+2016/06/09 22:13:43:958349 [DEBUG] ============test DONE!===============
+2016/06/09 22:52:18:066035 [DEBUG] Paths Init Finished.
+2016/06/09 22:52:18:066140 [DEBUG] Begin to Start Httpd Server...
+2016/06/09 22:52:18:066169 [INFO] mnl started
+2016/06/09 22:52:18:066408 [DEBUG] thr_args alloc
+2016/06/09 22:52:18:066485 [DEBUG] luaL_newstate alloc
+2016/06/09 22:52:18:071514 [DEBUG] thr_args alloc
+2016/06/09 22:52:18:071597 [DEBUG] luaL_newstate alloc
+2016/06/09 22:52:20:670819 [DEBUG] Method: 2
+2016/06/09 22:52:20:670925 [DEBUG] rules: 0x1d2c4c0
+2016/06/09 22:52:20:670971 [DEBUG] addr: 0
+2016/06/09 22:52:20:671012 [DEBUG] rules->value->addr: 1862379712
+2016/06/09 22:52:20:671050 [DEBUG] rules->value->mask: -1
+2016/06/09 22:52:20:671088 [DEBUG] addr: 0
+2016/06/09 22:52:20:671127 [DEBUG] rules->value->addr: 764096
+2016/06/09 22:52:20:671166 [DEBUG] rules->value->mask: 16777215
+2016/06/09 22:52:20:671204 [DEBUG] addr: 0
+2016/06/09 22:52:20:671241 [DEBUG] rules->value->addr: 0
+2016/06/09 22:52:20:671285 [DEBUG] rules->value->mask: -1
+2016/06/09 22:52:20:671325 [DEBUG] access check: 0
+2016/06/09 22:52:20:671373 [DEBUG] evblen = 42
+2016/06/09 22:52:20:671434 [DEBUG] rmblen = 42
+2016/06/09 22:52:20:671501 [DEBUG] ret_str_unformat: {"ret":true,"info":{"md5":"helloaaaa!"}}
+2016/06/09 22:52:20:671574 [DEBUG] ============test DONE!===============
+2016/06/09 23:40:00:541937 [DEBUG] Paths Init Finished.
+2016/06/09 23:40:00:542045 [DEBUG] Begin to Start Httpd Server...
+2016/06/09 23:40:00:542074 [INFO] mnl started
+2016/06/09 23:40:00:542328 [DEBUG] thr_args alloc
+2016/06/09 23:40:00:542393 [DEBUG] luaL_newstate alloc
+2016/06/09 23:40:00:547457 [DEBUG] thr_args alloc
+2016/06/09 23:40:00:547548 [DEBUG] luaL_newstate alloc
+2016/06/09 23:40:09:180010 [DEBUG] Method: 2
+2016/06/09 23:40:09:180102 [DEBUG] rules: 0x1f8b4c0
+2016/06/09 23:40:09:180139 [DEBUG] addr: 0
+2016/06/09 23:40:09:180166 [DEBUG] rules->value->addr: 1862379712
+2016/06/09 23:40:09:180191 [DEBUG] rules->value->mask: -1
+2016/06/09 23:40:09:180216 [DEBUG] addr: 0
+2016/06/09 23:40:09:180240 [DEBUG] rules->value->addr: 764096
+2016/06/09 23:40:09:180264 [DEBUG] rules->value->mask: 16777215
+2016/06/09 23:40:09:180288 [DEBUG] addr: 0
+2016/06/09 23:40:09:180312 [DEBUG] rules->value->addr: 0
+2016/06/09 23:40:09:180336 [DEBUG] rules->value->mask: -1
+2016/06/09 23:40:09:180360 [DEBUG] access check: 0
+2016/06/09 23:40:09:180387 [DEBUG] evblen = 42
+2016/06/09 23:40:09:180416 [DEBUG] rmblen = 42
+2016/06/09 23:40:09:180467 [DEBUG] ret_str_unformat: {"ret":true,"info":{"md5":"helloaaaa!"}}
+2016/06/09 23:40:09:180516 [DEBUG] ============test DONE!===============
+2016/06/09 23:40:23:767286 [DEBUG] Method: 2
+2016/06/09 23:40:23:767367 [DEBUG] rules: 0x1f8b4c0
+2016/06/09 23:40:23:767397 [DEBUG] addr: 0
+2016/06/09 23:40:23:767433 [DEBUG] rules->value->addr: 1862379712
+2016/06/09 23:40:23:767461 [DEBUG] rules->value->mask: -1
+2016/06/09 23:40:23:767485 [DEBUG] addr: 0
+2016/06/09 23:40:23:767510 [DEBUG] rules->value->addr: 764096
+2016/06/09 23:40:23:767534 [DEBUG] rules->value->mask: 16777215
+2016/06/09 23:40:23:767558 [DEBUG] addr: 0
+2016/06/09 23:40:23:767582 [DEBUG] rules->value->addr: 0
+2016/06/09 23:40:23:767606 [DEBUG] rules->value->mask: -1
+2016/06/09 23:40:23:767629 [DEBUG] access check: 0
+2016/06/09 23:40:23:767654 [DEBUG] evblen = 131
+2016/06/09 23:40:23:767680 [DEBUG] rmblen = 131
+2016/06/09 23:40:23:767722 [DEBUG] ret_str_unformat: {"ret":true,"info":{"uid":"888888","username":"李巍","type":"","cert":"P0","cert_no":"522221198511061255","mobile":"1312060707","spare":""}}
+2016/06/09 23:40:23:767780 [DEBUG] ============usra DONE!===============
+2016/06/09 23:41:53:241971 [DEBUG] Paths Init Finished.
+2016/06/09 23:41:53:242074 [DEBUG] Begin to Start Httpd Server...
+2016/06/09 23:41:53:242102 [INFO] mnl started
+2016/06/09 23:41:53:242352 [DEBUG] thr_args alloc
+2016/06/09 23:41:53:242415 [DEBUG] luaL_newstate alloc
+2016/06/09 23:41:53:247639 [DEBUG] thr_args alloc
+2016/06/09 23:41:53:247715 [DEBUG] luaL_newstate alloc
+2016/06/09 23:41:55:350358 [DEBUG] Method: 2
+2016/06/09 23:41:55:350429 [DEBUG] rules: 0x14bd4c0
+2016/06/09 23:41:55:350473 [DEBUG] addr: 0
+2016/06/09 23:41:55:350500 [DEBUG] rules->value->addr: 1862379712
+2016/06/09 23:41:55:350524 [DEBUG] rules->value->mask: -1
+2016/06/09 23:41:55:350547 [DEBUG] addr: 0
+2016/06/09 23:41:55:350570 [DEBUG] rules->value->addr: 764096
+2016/06/09 23:41:55:350593 [DEBUG] rules->value->mask: 16777215
+2016/06/09 23:41:55:350615 [DEBUG] addr: 0
+2016/06/09 23:41:55:350638 [DEBUG] rules->value->addr: 0
+2016/06/09 23:41:55:350661 [DEBUG] rules->value->mask: -1
+2016/06/09 23:41:55:350684 [DEBUG] access check: 0
+2016/06/09 23:41:55:350711 [DEBUG] evblen = 131
+2016/06/09 23:41:55:350738 [DEBUG] rmblen = 131
+2016/06/09 23:41:55:350784 [DEBUG] ret_str_unformat: {"ret":true,"info":{"uid":"888888","username":"李巍","type":"","cert":"P01522221198511061255","cert_no":"522221198511061255","mobile":"1312060707","spare":""}}
+2016/06/09 23:41:55:350833 [DEBUG] ============usra DONE!===============
+2016/06/09 23:43:17:149109 [DEBUG] Paths Init Finished.
+2016/06/09 23:43:17:149215 [DEBUG] Begin to Start Httpd Server...
+2016/06/09 23:43:17:149243 [INFO] mnl started
+2016/06/09 23:43:17:149506 [DEBUG] thr_args alloc
+2016/06/09 23:43:17:149577 [DEBUG] luaL_newstate alloc
+2016/06/09 23:43:17:154620 [DEBUG] thr_args alloc
+2016/06/09 23:43:17:154708 [DEBUG] luaL_newstate alloc
+2016/06/09 23:43:19:325919 [DEBUG] Method: 2
+2016/06/09 23:43:19:326032 [DEBUG] rules: 0x1acc4c0
+2016/06/09 23:43:19:326084 [DEBUG] addr: 0
+2016/06/09 23:43:19:326131 [DEBUG] rules->value->addr: 1862379712
+2016/06/09 23:43:19:326170 [DEBUG] rules->value->mask: -1
+2016/06/09 23:43:19:326201 [DEBUG] addr: 0
+2016/06/09 23:43:19:326228 [DEBUG] rules->value->addr: 764096
+2016/06/09 23:43:19:326256 [DEBUG] rules->value->mask: 16777215
+2016/06/09 23:43:19:326287 [DEBUG] addr: 0
+2016/06/09 23:43:19:326313 [DEBUG] rules->value->addr: 0
+2016/06/09 23:43:19:326343 [DEBUG] rules->value->mask: -1
+2016/06/09 23:43:19:326361 [DEBUG] access check: 0
+2016/06/09 23:43:19:326382 [DEBUG] evblen = 131
+2016/06/09 23:43:19:326404 [DEBUG] rmblen = 131
+2016/06/09 23:43:19:326467 [DEBUG] ret_str_unformat: {"ret":true,"info":{"uid":"888888","username":"李巍","type":"","cert":"P0","cert_no":"522221198511061255","mobile":"1312060707","spare":""}}
+2016/06/09 23:43:19:326522 [DEBUG] ============usra DONE!===============
+2016/06/09 23:44:45:564483 [DEBUG] Paths Init Finished.
+2016/06/09 23:44:45:564591 [DEBUG] Begin to Start Httpd Server...
+2016/06/09 23:44:45:564620 [INFO] mnl started
+2016/06/09 23:44:45:564887 [DEBUG] thr_args alloc
+2016/06/09 23:44:45:564962 [DEBUG] luaL_newstate alloc
+2016/06/09 23:44:45:570155 [DEBUG] thr_args alloc
+2016/06/09 23:44:45:570230 [DEBUG] luaL_newstate alloc
+2016/06/09 23:44:49:015056 [DEBUG] Method: 2
+2016/06/09 23:44:49:015130 [DEBUG] rules: 0xbb74c0
+2016/06/09 23:44:49:015155 [DEBUG] addr: 0
+2016/06/09 23:44:49:015176 [DEBUG] rules->value->addr: 1862379712
+2016/06/09 23:44:49:015195 [DEBUG] rules->value->mask: -1
+2016/06/09 23:44:49:015214 [DEBUG] addr: 0
+2016/06/09 23:44:49:015232 [DEBUG] rules->value->addr: 764096
+2016/06/09 23:44:49:015251 [DEBUG] rules->value->mask: 16777215
+2016/06/09 23:44:49:015269 [DEBUG] addr: 0
+2016/06/09 23:44:49:015288 [DEBUG] rules->value->addr: 0
+2016/06/09 23:44:49:015306 [DEBUG] rules->value->mask: -1
+2016/06/09 23:44:49:015324 [DEBUG] access check: 0
+2016/06/09 23:44:49:015345 [DEBUG] evblen = 131
+2016/06/09 23:44:49:015377 [DEBUG] rmblen = 131
+2016/06/09 23:44:49:015416 [DEBUG] ret_str_unformat: {"ret":true,"info":{"uid":"888888","username":"李巍","type":"P","cert":"P01","cert_no":"522221198511061255","mobile":"13120607077","spare":""}}
+2016/06/09 23:44:49:015487 [DEBUG] ============usra DONE!===============
+2016/06/09 23:49:51:126698 [DEBUG] Paths Init Finished.
+2016/06/09 23:49:51:126804 [DEBUG] Begin to Start Httpd Server...
+2016/06/09 23:49:51:126832 [INFO] mnl started
+2016/06/09 23:49:51:127086 [DEBUG] thr_args alloc
+2016/06/09 23:49:51:127150 [DEBUG] luaL_newstate alloc
+2016/06/09 23:49:51:132210 [DEBUG] thr_args alloc
+2016/06/09 23:49:51:132291 [DEBUG] luaL_newstate alloc
+2016/06/09 23:49:53:695592 [DEBUG] Method: 2
+2016/06/09 23:49:53:695679 [DEBUG] rules: 0xbf74c0
+2016/06/09 23:49:53:695709 [DEBUG] addr: 0
+2016/06/09 23:49:53:695733 [DEBUG] rules->value->addr: 1862379712
+2016/06/09 23:49:53:695756 [DEBUG] rules->value->mask: -1
+2016/06/09 23:49:53:695779 [DEBUG] addr: 0
+2016/06/09 23:49:53:695801 [DEBUG] rules->value->addr: 764096
+2016/06/09 23:49:53:695824 [DEBUG] rules->value->mask: 16777215
+2016/06/09 23:49:53:695847 [DEBUG] addr: 0
+2016/06/09 23:49:53:695869 [DEBUG] rules->value->addr: 0
+2016/06/09 23:49:53:695891 [DEBUG] rules->value->mask: -1
+2016/06/09 23:49:53:695913 [DEBUG] access check: 0
+2016/06/09 23:49:53:695940 [DEBUG] evblen = 131
+2016/06/09 23:49:53:695967 [DEBUG] rmblen = 131
+2016/06/09 23:49:53:696013 [DEBUG] ret_str_unformat: {"ret":true,"info":{"uid":"888888","username":"李巍","type":"","cert":"P01522221198511061255","cert_no":"522221198511061255","mobile":"1312060707","spare":""}}
+2016/06/09 23:49:53:696062 [DEBUG] ============usra DONE!===============
+2016/06/09 23:59:39:265130 [DEBUG] Paths Init Finished.
+2016/06/09 23:59:39:265235 [DEBUG] Begin to Start Httpd Server...
+2016/06/09 23:59:39:265263 [INFO] mnl started
+2016/06/09 23:59:39:265515 [DEBUG] thr_args alloc
+2016/06/09 23:59:39:265581 [DEBUG] luaL_newstate alloc
+2016/06/09 23:59:39:270610 [DEBUG] thr_args alloc
+2016/06/09 23:59:39:270702 [DEBUG] luaL_newstate alloc
+2016/06/09 23:59:42:475305 [DEBUG] Method: 2
+2016/06/09 23:59:42:475395 [DEBUG] rules: 0xa284c0
+2016/06/09 23:59:42:475440 [DEBUG] addr: 0
+2016/06/09 23:59:42:475467 [DEBUG] rules->value->addr: 1862379712
+2016/06/09 23:59:42:475490 [DEBUG] rules->value->mask: -1
+2016/06/09 23:59:42:475513 [DEBUG] addr: 0
+2016/06/09 23:59:42:475536 [DEBUG] rules->value->addr: 764096
+2016/06/09 23:59:42:475559 [DEBUG] rules->value->mask: 16777215
+2016/06/09 23:59:42:475582 [DEBUG] addr: 0
+2016/06/09 23:59:42:475605 [DEBUG] rules->value->addr: 0
+2016/06/09 23:59:42:475628 [DEBUG] rules->value->mask: -1
+2016/06/09 23:59:42:475650 [DEBUG] access check: 0
+2016/06/09 23:59:42:475677 [DEBUG] evblen = 131
+2016/06/09 23:59:42:475704 [DEBUG] rmblen = 131
+2016/06/09 23:59:42:475750 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/09 23:59:42:475799 [DEBUG] ============usra DONE!===============
+2016/06/11 16:24:34:668914 [DEBUG] Paths Init Finished.
+2016/06/11 16:24:34:716522 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 16:24:34:716608 [INFO] mnl started
+2016/06/11 16:24:34:717168 [DEBUG] thr_args alloc
+2016/06/11 16:24:34:717240 [DEBUG] luaL_newstate alloc
+2016/06/11 16:24:34:722602 [DEBUG] thr_args alloc
+2016/06/11 16:24:34:722698 [DEBUG] luaL_newstate alloc
+2016/06/11 16:25:44:503795 [DEBUG] Method: 2
+2016/06/11 16:25:44:503880 [DEBUG] rules: 0x12d64c0
+2016/06/11 16:25:44:503915 [DEBUG] addr: 0
+2016/06/11 16:25:44:503944 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 16:25:44:503972 [DEBUG] rules->value->mask: -1
+2016/06/11 16:25:44:503999 [DEBUG] addr: 0
+2016/06/11 16:25:44:504026 [DEBUG] rules->value->addr: 764096
+2016/06/11 16:25:44:504053 [DEBUG] rules->value->mask: 16777215
+2016/06/11 16:25:44:504079 [DEBUG] addr: 0
+2016/06/11 16:25:44:504105 [DEBUG] rules->value->addr: 0
+2016/06/11 16:25:44:504131 [DEBUG] rules->value->mask: -1
+2016/06/11 16:25:44:504158 [DEBUG] access check: 0
+2016/06/11 16:25:44:504190 [DEBUG] evblen = 131
+2016/06/11 16:25:44:504235 [DEBUG] rmblen = 131
+2016/06/11 16:25:44:504279 [DEBUG] ============input: 888888===============
+2016/06/11 16:25:44:504319 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 16:25:44:504366 [DEBUG] ============usra DONE!===============
+2016/06/11 16:26:58:940958 [DEBUG] Paths Init Finished.
+2016/06/11 16:26:58:941090 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 16:26:58:941122 [INFO] mnl started
+2016/06/11 16:26:58:941415 [DEBUG] thr_args alloc
+2016/06/11 16:26:58:941496 [DEBUG] luaL_newstate alloc
+2016/06/11 16:26:58:946556 [DEBUG] thr_args alloc
+2016/06/11 16:26:58:946656 [DEBUG] luaL_newstate alloc
+2016/06/11 16:27:07:605908 [DEBUG] Method: 2
+2016/06/11 16:27:07:605995 [DEBUG] rules: 0x22854c0
+2016/06/11 16:27:07:606037 [DEBUG] addr: 0
+2016/06/11 16:27:07:606064 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 16:27:07:606097 [DEBUG] rules->value->mask: -1
+2016/06/11 16:27:07:606131 [DEBUG] addr: 0
+2016/06/11 16:27:07:606165 [DEBUG] rules->value->addr: 764096
+2016/06/11 16:27:07:606189 [DEBUG] rules->value->mask: 16777215
+2016/06/11 16:27:07:606209 [DEBUG] addr: 0
+2016/06/11 16:27:07:606228 [DEBUG] rules->value->addr: 0
+2016/06/11 16:27:07:606247 [DEBUG] rules->value->mask: -1
+2016/06/11 16:27:07:606267 [DEBUG] access check: 0
+2016/06/11 16:27:07:606291 [DEBUG] evblen = 131
+2016/06/11 16:27:07:606315 [DEBUG] rmblen = 131
+2016/06/11 16:27:07:606347 [DEBUG] ============input: 8888882222222222222===============
+2016/06/11 16:27:07:606376 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 16:27:07:606428 [DEBUG] ============usra DONE!===============
+2016/06/11 16:28:48:161112 [DEBUG] Paths Init Finished.
+2016/06/11 16:28:48:161226 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 16:28:48:161257 [INFO] mnl started
+2016/06/11 16:28:48:161514 [DEBUG] thr_args alloc
+2016/06/11 16:28:48:161593 [DEBUG] luaL_newstate alloc
+2016/06/11 16:28:48:166653 [DEBUG] thr_args alloc
+2016/06/11 16:28:48:166753 [DEBUG] luaL_newstate alloc
+2016/06/11 16:28:54:973712 [DEBUG] Method: 2
+2016/06/11 16:28:54:973798 [DEBUG] rules: 0x76e4c0
+2016/06/11 16:28:54:973833 [DEBUG] addr: 0
+2016/06/11 16:28:54:973863 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 16:28:54:973897 [DEBUG] rules->value->mask: -1
+2016/06/11 16:28:54:973917 [DEBUG] addr: 0
+2016/06/11 16:28:54:973938 [DEBUG] rules->value->addr: 764096
+2016/06/11 16:28:54:973958 [DEBUG] rules->value->mask: 16777215
+2016/06/11 16:28:54:973978 [DEBUG] addr: 0
+2016/06/11 16:28:54:973998 [DEBUG] rules->value->addr: 0
+2016/06/11 16:28:54:974018 [DEBUG] rules->value->mask: -1
+2016/06/11 16:28:54:974038 [DEBUG] access check: 0
+2016/06/11 16:28:54:974063 [DEBUG] evblen = 131
+2016/06/11 16:28:54:974088 [DEBUG] rmblen = 131
+2016/06/11 16:28:54:974122 [DEBUG] ============input: 888888             ===============
+2016/06/11 16:28:54:974152 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 16:28:54:974192 [DEBUG] ============usra DONE!===============
+2016/06/11 16:35:06:006529 [DEBUG] Paths Init Finished.
+2016/06/11 16:35:06:011735 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 16:35:06:011795 [INFO] mnl started
+2016/06/11 16:35:06:012096 [DEBUG] thr_args alloc
+2016/06/11 16:35:06:012164 [DEBUG] luaL_newstate alloc
+2016/06/11 16:35:06:017235 [DEBUG] thr_args alloc
+2016/06/11 16:35:06:017304 [DEBUG] luaL_newstate alloc
+2016/06/11 16:35:13:940478 [DEBUG] Method: 2
+2016/06/11 16:35:13:940594 [DEBUG] rules: 0x15e34c0
+2016/06/11 16:35:13:940652 [DEBUG] addr: 0
+2016/06/11 16:35:13:940687 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 16:35:13:940733 [DEBUG] rules->value->mask: -1
+2016/06/11 16:35:13:940782 [DEBUG] addr: 0
+2016/06/11 16:35:13:940831 [DEBUG] rules->value->addr: 764096
+2016/06/11 16:35:13:940879 [DEBUG] rules->value->mask: 16777215
+2016/06/11 16:35:13:940927 [DEBUG] addr: 0
+2016/06/11 16:35:13:940975 [DEBUG] rules->value->addr: 0
+2016/06/11 16:35:13:941022 [DEBUG] rules->value->mask: -1
+2016/06/11 16:35:13:941086 [DEBUG] access check: 0
+2016/06/11 16:35:13:941117 [DEBUG] evblen = 131
+2016/06/11 16:35:13:941156 [DEBUG] rmblen = 131
+2016/06/11 16:35:13:941212 [DEBUG] ============input: 888888              李巍                                                                                                                                                           P0 522221198511061255            1312060707                                                                                                                                                                                                         ===============
+2016/06/11 16:35:13:941264 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 16:35:13:941325 [DEBUG] ============usra DONE!===============
+2016/06/11 16:39:46:173034 [DEBUG] Paths Init Finished.
+2016/06/11 16:39:46:173146 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 16:39:46:173177 [INFO] mnl started
+2016/06/11 16:39:46:173436 [DEBUG] thr_args alloc
+2016/06/11 16:39:46:173500 [DEBUG] luaL_newstate alloc
+2016/06/11 16:39:46:178602 [DEBUG] thr_args alloc
+2016/06/11 16:39:46:178703 [DEBUG] luaL_newstate alloc
+2016/06/11 16:39:52:409801 [DEBUG] Method: 2
+2016/06/11 16:39:52:409890 [DEBUG] rules: 0xb004c0
+2016/06/11 16:39:52:409924 [DEBUG] addr: 0
+2016/06/11 16:39:52:409953 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 16:39:52:409979 [DEBUG] rules->value->mask: -1
+2016/06/11 16:39:52:410006 [DEBUG] addr: 0
+2016/06/11 16:39:52:410031 [DEBUG] rules->value->addr: 764096
+2016/06/11 16:39:52:410057 [DEBUG] rules->value->mask: 16777215
+2016/06/11 16:39:52:410082 [DEBUG] addr: 0
+2016/06/11 16:39:52:410108 [DEBUG] rules->value->addr: 0
+2016/06/11 16:39:52:410134 [DEBUG] rules->value->mask: -1
+2016/06/11 16:39:52:410160 [DEBUG] access check: 0
+2016/06/11 16:39:52:410192 [DEBUG] evblen = 131
+2016/06/11 16:39:52:410223 [DEBUG] rmblen = 131
+2016/06/11 16:39:52:410265 [DEBUG] ============input: 888888             ===============
+2016/06/11 16:39:52:410295 [DEBUG] ============input: P0===============
+2016/06/11 16:39:52:410331 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 16:39:52:410381 [DEBUG] ============usra DONE!===============
+2016/06/11 16:40:35:284121 [DEBUG] Paths Init Finished.
+2016/06/11 16:40:35:284233 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 16:40:35:284265 [INFO] mnl started
+2016/06/11 16:40:35:284520 [DEBUG] thr_args alloc
+2016/06/11 16:40:35:284586 [DEBUG] luaL_newstate alloc
+2016/06/11 16:40:35:289655 [DEBUG] thr_args alloc
+2016/06/11 16:40:35:289750 [DEBUG] luaL_newstate alloc
+2016/06/11 16:40:41:890935 [DEBUG] Method: 2
+2016/06/11 16:40:41:891029 [DEBUG] rules: 0x15b24c0
+2016/06/11 16:40:41:891064 [DEBUG] addr: 0
+2016/06/11 16:40:41:891092 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 16:40:41:891118 [DEBUG] rules->value->mask: -1
+2016/06/11 16:40:41:891143 [DEBUG] addr: 0
+2016/06/11 16:40:41:891170 [DEBUG] rules->value->addr: 764096
+2016/06/11 16:40:41:891196 [DEBUG] rules->value->mask: 16777215
+2016/06/11 16:40:41:891222 [DEBUG] addr: 0
+2016/06/11 16:40:41:891247 [DEBUG] rules->value->addr: 0
+2016/06/11 16:40:41:891273 [DEBUG] rules->value->mask: -1
+2016/06/11 16:40:41:891298 [DEBUG] access check: 0
+2016/06/11 16:40:41:891329 [DEBUG] evblen = 131
+2016/06/11 16:40:41:891371 [DEBUG] rmblen = 131
+2016/06/11 16:40:41:891411 [DEBUG] ============input: 888888===============
+2016/06/11 16:40:41:891447 [DEBUG] ============input: P0===============
+2016/06/11 16:40:41:891485 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 16:40:41:891535 [DEBUG] ============usra DONE!===============
+2016/06/11 16:42:19:286570 [DEBUG] Paths Init Finished.
+2016/06/11 16:42:19:286682 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 16:42:19:286713 [INFO] mnl started
+2016/06/11 16:42:19:286940 [DEBUG] thr_args alloc
+2016/06/11 16:42:19:287005 [DEBUG] luaL_newstate alloc
+2016/06/11 16:42:19:292094 [DEBUG] thr_args alloc
+2016/06/11 16:42:19:292198 [DEBUG] luaL_newstate alloc
+2016/06/11 16:42:24:657597 [DEBUG] Method: 2
+2016/06/11 16:42:24:657707 [DEBUG] rules: 0x1b414c0
+2016/06/11 16:42:24:657760 [DEBUG] addr: 0
+2016/06/11 16:42:24:657807 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 16:42:24:657854 [DEBUG] rules->value->mask: -1
+2016/06/11 16:42:24:657898 [DEBUG] addr: 0
+2016/06/11 16:42:24:657943 [DEBUG] rules->value->addr: 764096
+2016/06/11 16:42:24:657987 [DEBUG] rules->value->mask: 16777215
+2016/06/11 16:42:24:658030 [DEBUG] addr: 0
+2016/06/11 16:42:24:658073 [DEBUG] rules->value->addr: 0
+2016/06/11 16:42:24:658118 [DEBUG] rules->value->mask: -1
+2016/06/11 16:42:24:658163 [DEBUG] access check: 0
+2016/06/11 16:42:24:658218 [DEBUG] evblen = 131
+2016/06/11 16:42:24:658270 [DEBUG] rmblen = 131
+2016/06/11 16:42:24:658331 [DEBUG] ============input: 888888              李巍                                                                                                                                                          PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 16:42:24:658369 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 16:42:24:658425 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 16:42:24:658498 [DEBUG] ============usra DONE!===============
+2016/06/11 16:44:47:432945 [DEBUG] Paths Init Finished.
+2016/06/11 16:44:47:433059 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 16:44:47:433091 [INFO] mnl started
+2016/06/11 16:44:47:433344 [DEBUG] thr_args alloc
+2016/06/11 16:44:47:433417 [DEBUG] luaL_newstate alloc
+2016/06/11 16:44:47:438498 [DEBUG] thr_args alloc
+2016/06/11 16:44:47:438601 [DEBUG] luaL_newstate alloc
+2016/06/11 16:44:52:656803 [DEBUG] Method: 2
+2016/06/11 16:44:52:656893 [DEBUG] rules: 0x13944c0
+2016/06/11 16:44:52:656924 [DEBUG] addr: 0
+2016/06/11 16:44:52:656946 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 16:44:52:656966 [DEBUG] rules->value->mask: -1
+2016/06/11 16:44:52:656986 [DEBUG] addr: 0
+2016/06/11 16:44:52:657005 [DEBUG] rules->value->addr: 764096
+2016/06/11 16:44:52:657025 [DEBUG] rules->value->mask: 16777215
+2016/06/11 16:44:52:657044 [DEBUG] addr: 0
+2016/06/11 16:44:52:657064 [DEBUG] rules->value->addr: 0
+2016/06/11 16:44:52:657084 [DEBUG] rules->value->mask: -1
+2016/06/11 16:44:52:657103 [DEBUG] access check: 0
+2016/06/11 16:44:52:657127 [DEBUG] evblen = 131
+2016/06/11 16:44:52:657151 [DEBUG] rmblen = 131
+2016/06/11 16:44:52:657184 [DEBUG] ============input: 888888              李巍                                                                                                                                                          PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 16:44:52:657206 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 16:44:52:657235 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 16:44:52:657274 [DEBUG] ============usra DONE!===============
+2016/06/11 16:48:50:164761 [DEBUG] Method: 2
+2016/06/11 16:48:50:164855 [DEBUG] rules: 0x13944c0
+2016/06/11 16:48:50:164891 [DEBUG] addr: 0
+2016/06/11 16:48:50:164919 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 16:48:50:164959 [DEBUG] rules->value->mask: -1
+2016/06/11 16:48:50:164985 [DEBUG] addr: 0
+2016/06/11 16:48:50:165011 [DEBUG] rules->value->addr: 764096
+2016/06/11 16:48:50:165036 [DEBUG] rules->value->mask: 16777215
+2016/06/11 16:48:50:165061 [DEBUG] addr: 0
+2016/06/11 16:48:50:165086 [DEBUG] rules->value->addr: 0
+2016/06/11 16:48:50:165111 [DEBUG] rules->value->mask: -1
+2016/06/11 16:48:50:165136 [DEBUG] access check: 0
+2016/06/11 16:48:50:165163 [DEBUG] evblen = 143
+2016/06/11 16:48:50:165190 [DEBUG] rmblen = 143
+2016/06/11 16:48:50:165226 [DEBUG] ============input: 888888              招商银行                                                                                                                                                    PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 16:48:50:165255 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 16:48:50:165290 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 16:48:50:165349 [DEBUG] ============usra DONE!===============
+2016/06/11 17:21:49:799725 [DEBUG] Paths Init Finished.
+2016/06/11 17:21:49:805069 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 17:21:49:805134 [INFO] mnl started
+2016/06/11 17:21:49:805399 [DEBUG] thr_args alloc
+2016/06/11 17:21:49:805474 [DEBUG] luaL_newstate alloc
+2016/06/11 17:21:49:810596 [DEBUG] thr_args alloc
+2016/06/11 17:21:49:810662 [DEBUG] luaL_newstate alloc
+2016/06/11 17:21:57:249153 [DEBUG] Method: 2
+2016/06/11 17:21:57:249242 [DEBUG] rules: 0x23074c0
+2016/06/11 17:21:57:249276 [DEBUG] addr: 0
+2016/06/11 17:21:57:249305 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 17:21:57:249331 [DEBUG] rules->value->mask: -1
+2016/06/11 17:21:57:249358 [DEBUG] addr: 0
+2016/06/11 17:21:57:249383 [DEBUG] rules->value->addr: 764096
+2016/06/11 17:21:57:249421 [DEBUG] rules->value->mask: 16777215
+2016/06/11 17:21:57:249450 [DEBUG] addr: 0
+2016/06/11 17:21:57:249477 [DEBUG] rules->value->addr: 0
+2016/06/11 17:21:57:249502 [DEBUG] rules->value->mask: -1
+2016/06/11 17:21:57:249527 [DEBUG] access check: 0
+2016/06/11 17:21:57:249560 [DEBUG] evblen = 143
+2016/06/11 17:21:57:249590 [DEBUG] rmblen = 143
+2016/06/11 17:21:57:249636 [DEBUG] ============input: 00000000000000000000招商银行                                                                                                                                                    PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 17:21:57:249666 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 17:21:57:249702 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 17:21:57:249751 [DEBUG] ============usra DONE!===============
+2016/06/11 17:49:27:140354 [DEBUG] Paths Init Finished.
+2016/06/11 17:49:27:140482 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 17:49:27:140515 [INFO] mnl started
+2016/06/11 17:49:27:140773 [DEBUG] thr_args alloc
+2016/06/11 17:49:27:140851 [DEBUG] luaL_newstate alloc
+2016/06/11 17:49:27:145888 [DEBUG] thr_args alloc
+2016/06/11 17:49:27:145977 [DEBUG] luaL_newstate alloc
+2016/06/11 17:49:33:650953 [DEBUG] Method: 2
+2016/06/11 17:49:33:651065 [DEBUG] rules: 0x1a464c0
+2016/06/11 17:49:33:651117 [DEBUG] addr: 0
+2016/06/11 17:49:33:651160 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 17:49:33:651205 [DEBUG] rules->value->mask: -1
+2016/06/11 17:49:33:651249 [DEBUG] addr: 0
+2016/06/11 17:49:33:651288 [DEBUG] rules->value->addr: 764096
+2016/06/11 17:49:33:651329 [DEBUG] rules->value->mask: 16777215
+2016/06/11 17:49:33:651370 [DEBUG] addr: 0
+2016/06/11 17:49:33:651417 [DEBUG] rules->value->addr: 0
+2016/06/11 17:49:33:651461 [DEBUG] rules->value->mask: -1
+2016/06/11 17:49:33:651501 [DEBUG] access check: 0
+2016/06/11 17:49:33:651548 [DEBUG] evblen = 143
+2016/06/11 17:49:33:651591 [DEBUG] rmblen = 143
+2016/06/11 17:49:33:651658 [DEBUG] ============input: 0000000000000000000===============
+2016/06/11 17:49:33:651688 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 17:49:33:651730 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 17:49:33:651780 [DEBUG] ============usra DONE!===============
+2016/06/11 18:21:51:115064 [DEBUG] Paths Init Finished.
+2016/06/11 18:21:51:115177 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 18:21:51:115207 [INFO] mnl started
+2016/06/11 18:21:51:115442 [DEBUG] thr_args alloc
+2016/06/11 18:21:51:115513 [DEBUG] luaL_newstate alloc
+2016/06/11 18:21:51:120798 [DEBUG] thr_args alloc
+2016/06/11 18:21:51:120892 [DEBUG] luaL_newstate alloc
+2016/06/11 18:22:10:187873 [DEBUG] Method: 2
+2016/06/11 18:22:10:187985 [DEBUG] rules: 0x20d44c0
+2016/06/11 18:22:10:188027 [DEBUG] addr: 0
+2016/06/11 18:22:10:188056 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 18:22:10:188082 [DEBUG] rules->value->mask: -1
+2016/06/11 18:22:10:188106 [DEBUG] addr: 0
+2016/06/11 18:22:10:188131 [DEBUG] rules->value->addr: 764096
+2016/06/11 18:22:10:188156 [DEBUG] rules->value->mask: 16777215
+2016/06/11 18:22:10:188182 [DEBUG] addr: 0
+2016/06/11 18:22:10:188208 [DEBUG] rules->value->addr: 0
+2016/06/11 18:22:10:188232 [DEBUG] rules->value->mask: -1
+2016/06/11 18:22:10:188255 [DEBUG] access check: 0
+2016/06/11 18:22:10:188287 [DEBUG] evblen = 143
+2016/06/11 18:22:10:188318 [DEBUG] rmblen = 143
+2016/06/11 18:22:10:188361 [DEBUG] ============input: 00000000000000000000招商银行                                                                                                                                                    PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 18:22:10:188390 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 18:22:10:188451 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 18:22:10:188505 [DEBUG] ============usra DONE!===============
+2016/06/11 18:34:53:058461 [DEBUG] Paths Init Finished.
+2016/06/11 18:34:53:058575 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 18:34:53:058606 [INFO] mnl started
+2016/06/11 18:34:53:058845 [DEBUG] thr_args alloc
+2016/06/11 18:34:53:058912 [DEBUG] luaL_newstate alloc
+2016/06/11 18:34:53:063995 [DEBUG] thr_args alloc
+2016/06/11 18:34:53:064107 [DEBUG] luaL_newstate alloc
+2016/06/11 18:35:02:012671 [DEBUG] Method: 2
+2016/06/11 18:35:02:012774 [DEBUG] rules: 0x22c84c0
+2016/06/11 18:35:02:012831 [DEBUG] addr: 0
+2016/06/11 18:35:02:012884 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 18:35:02:012934 [DEBUG] rules->value->mask: -1
+2016/06/11 18:35:02:012998 [DEBUG] addr: 0
+2016/06/11 18:35:02:013045 [DEBUG] rules->value->addr: 764096
+2016/06/11 18:35:02:013091 [DEBUG] rules->value->mask: 16777215
+2016/06/11 18:35:02:013138 [DEBUG] addr: 0
+2016/06/11 18:35:02:013185 [DEBUG] rules->value->addr: 0
+2016/06/11 18:35:02:013226 [DEBUG] rules->value->mask: -1
+2016/06/11 18:35:02:013272 [DEBUG] access check: 0
+2016/06/11 18:35:02:013326 [DEBUG] evblen = 143
+2016/06/11 18:35:02:013379 [DEBUG] rmblen = 143
+2016/06/11 18:35:02:013468 [DEBUG] ============input: 00000000000000000000招商银行 ===============
+2016/06/11 18:35:02:013510 [DEBUG] ============input: P01522221198511061255 ===============
+2016/06/11 18:35:02:013554 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 18:35:02:013608 [DEBUG] ============usra DONE!===============
+2016/06/11 20:17:45:039939 [DEBUG] Paths Init Finished.
+2016/06/11 20:17:45:040051 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 20:17:45:040081 [INFO] mnl started
+2016/06/11 20:17:45:040374 [DEBUG] thr_args alloc
+2016/06/11 20:17:45:040459 [DEBUG] luaL_newstate alloc
+2016/06/11 20:17:45:045485 [DEBUG] thr_args alloc
+2016/06/11 20:17:45:045587 [DEBUG] luaL_newstate alloc
+2016/06/11 20:17:51:245646 [DEBUG] Method: 2
+2016/06/11 20:17:51:245736 [DEBUG] rules: 0x236f4c0
+2016/06/11 20:17:51:245773 [DEBUG] addr: 0
+2016/06/11 20:17:51:245803 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 20:17:51:245830 [DEBUG] rules->value->mask: -1
+2016/06/11 20:17:51:245857 [DEBUG] addr: 0
+2016/06/11 20:17:51:245885 [DEBUG] rules->value->addr: 764096
+2016/06/11 20:17:51:245911 [DEBUG] rules->value->mask: 16777215
+2016/06/11 20:17:51:245936 [DEBUG] addr: 0
+2016/06/11 20:17:51:245962 [DEBUG] rules->value->addr: 0
+2016/06/11 20:17:51:245988 [DEBUG] rules->value->mask: -1
+2016/06/11 20:17:51:246013 [DEBUG] access check: 0
+2016/06/11 20:17:51:246045 [DEBUG] evblen = 143
+2016/06/11 20:17:51:246078 [DEBUG] rmblen = 143
+2016/06/11 20:17:51:246123 [DEBUG] ============input: 00000000000000000000招商银行                                                                                                                                                    PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 20:17:51:246153 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 20:17:51:246191 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 20:17:51:246241 [DEBUG] ============usra DONE!===============
+2016/06/11 20:19:40:579766 [DEBUG] Paths Init Finished.
+2016/06/11 20:19:40:579880 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 20:19:40:579911 [INFO] mnl started
+2016/06/11 20:19:40:580165 [DEBUG] thr_args alloc
+2016/06/11 20:19:40:580230 [DEBUG] luaL_newstate alloc
+2016/06/11 20:19:40:585308 [DEBUG] thr_args alloc
+2016/06/11 20:19:40:585430 [DEBUG] luaL_newstate alloc
+2016/06/11 20:19:45:146327 [DEBUG] Method: 2
+2016/06/11 20:19:45:146450 [DEBUG] rules: 0xd524c0
+2016/06/11 20:19:45:146511 [DEBUG] addr: 0
+2016/06/11 20:19:45:146563 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 20:19:45:146615 [DEBUG] rules->value->mask: -1
+2016/06/11 20:19:45:146664 [DEBUG] addr: 0
+2016/06/11 20:19:45:146712 [DEBUG] rules->value->addr: 764096
+2016/06/11 20:19:45:146761 [DEBUG] rules->value->mask: 16777215
+2016/06/11 20:19:45:146810 [DEBUG] addr: 0
+2016/06/11 20:19:45:146858 [DEBUG] rules->value->addr: 0
+2016/06/11 20:19:45:146911 [DEBUG] rules->value->mask: -1
+2016/06/11 20:19:45:146947 [DEBUG] access check: 0
+2016/06/11 20:19:45:146989 [DEBUG] evblen = 143
+2016/06/11 20:19:45:147032 [DEBUG] rmblen = 143
+2016/06/11 20:19:45:147097 [DEBUG] testtetsasdjk:------>0
+2016/06/11 20:19:45:147139 [DEBUG] ============input: 00000000000000000000招商银行                                                                                                                                                    PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 20:19:45:147179 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 20:19:45:147230 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 20:19:45:147293 [DEBUG] ============usra DONE!===============
+2016/06/11 20:22:22:044713 [DEBUG] Paths Init Finished.
+2016/06/11 20:22:22:050008 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 20:22:22:050080 [INFO] mnl started
+2016/06/11 20:22:22:050413 [DEBUG] thr_args alloc
+2016/06/11 20:22:22:050493 [DEBUG] luaL_newstate alloc
+2016/06/11 20:22:22:055497 [DEBUG] thr_args alloc
+2016/06/11 20:22:22:055581 [DEBUG] luaL_newstate alloc
+2016/06/11 20:22:27:781146 [DEBUG] Method: 2
+2016/06/11 20:22:27:781240 [DEBUG] rules: 0x12954c0
+2016/06/11 20:22:27:781275 [DEBUG] addr: 0
+2016/06/11 20:22:27:781304 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 20:22:27:781332 [DEBUG] rules->value->mask: -1
+2016/06/11 20:22:27:781359 [DEBUG] addr: 0
+2016/06/11 20:22:27:781385 [DEBUG] rules->value->addr: 764096
+2016/06/11 20:22:27:781429 [DEBUG] rules->value->mask: 16777215
+2016/06/11 20:22:27:781462 [DEBUG] addr: 0
+2016/06/11 20:22:27:781489 [DEBUG] rules->value->addr: 0
+2016/06/11 20:22:27:781516 [DEBUG] rules->value->mask: -1
+2016/06/11 20:22:27:781543 [DEBUG] access check: 0
+2016/06/11 20:22:27:781575 [DEBUG] evblen = 143
+2016/06/11 20:22:27:781607 [DEBUG] rmblen = 143
+2016/06/11 20:22:27:781650 [DEBUG] ============input: 00000000000000888888招商银行                                                                                                                                                    PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 20:22:27:781681 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 20:22:27:781719 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 20:22:27:781770 [DEBUG] ============usra DONE!===============
+2016/06/11 20:26:44:226284 [DEBUG] Paths Init Finished.
+2016/06/11 20:26:44:226437 [DEBUG] Begin to Start Httpd Server...
+2016/06/11 20:26:44:226483 [INFO] mnl started
+2016/06/11 20:26:44:226800 [DEBUG] thr_args alloc
+2016/06/11 20:26:44:226868 [DEBUG] luaL_newstate alloc
+2016/06/11 20:26:44:231872 [DEBUG] thr_args alloc
+2016/06/11 20:26:44:231941 [DEBUG] luaL_newstate alloc
+2016/06/11 20:26:52:729392 [DEBUG] Method: 2
+2016/06/11 20:26:52:729497 [DEBUG] rules: 0xd434c0
+2016/06/11 20:26:52:729532 [DEBUG] addr: 0
+2016/06/11 20:26:52:729570 [DEBUG] rules->value->addr: 1862379712
+2016/06/11 20:26:52:729592 [DEBUG] rules->value->mask: -1
+2016/06/11 20:26:52:729613 [DEBUG] addr: 0
+2016/06/11 20:26:52:729633 [DEBUG] rules->value->addr: 764096
+2016/06/11 20:26:52:729655 [DEBUG] rules->value->mask: 16777215
+2016/06/11 20:26:52:729676 [DEBUG] addr: 0
+2016/06/11 20:26:52:729698 [DEBUG] rules->value->addr: 0
+2016/06/11 20:26:52:729733 [DEBUG] rules->value->mask: -1
+2016/06/11 20:26:52:729755 [DEBUG] access check: 0
+2016/06/11 20:26:52:729781 [DEBUG] evblen = 143
+2016/06/11 20:26:52:729806 [DEBUG] rmblen = 143
+2016/06/11 20:26:52:729839 [DEBUG] ============input: 00000000000000888888招商银行                                                                                                                                                    PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 20:26:52:729862 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/11 20:26:52:729891 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/11 20:26:52:729932 [DEBUG] ============usra DONE!===============
