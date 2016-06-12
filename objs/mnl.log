@@ -1349,3 +1349,85 @@
 2016/06/11 20:26:52:729862 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
 2016/06/11 20:26:52:729891 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
 2016/06/11 20:26:52:729932 [DEBUG] ============usra DONE!===============
+2016/06/12 22:38:37:972579 [DEBUG] Paths Init Finished.
+2016/06/12 22:38:38:020256 [DEBUG] Begin to Start Httpd Server...
+2016/06/12 22:38:38:020322 [INFO] mnl started
+2016/06/12 22:38:38:020628 [DEBUG] thr_args alloc
+2016/06/12 22:38:38:020695 [DEBUG] luaL_newstate alloc
+2016/06/12 22:38:38:025820 [DEBUG] thr_args alloc
+2016/06/12 22:38:38:025915 [DEBUG] luaL_newstate alloc
+2016/06/12 22:39:02:877794 [DEBUG] Method: 2
+2016/06/12 22:39:02:877879 [DEBUG] rules: 0xa6d4c0
+2016/06/12 22:39:02:877910 [DEBUG] addr: 0
+2016/06/12 22:39:02:877934 [DEBUG] rules->value->addr: 1862379712
+2016/06/12 22:39:02:877958 [DEBUG] rules->value->mask: -1
+2016/06/12 22:39:02:877981 [DEBUG] addr: 0
+2016/06/12 22:39:02:878004 [DEBUG] rules->value->addr: 764096
+2016/06/12 22:39:02:878027 [DEBUG] rules->value->mask: 16777215
+2016/06/12 22:39:02:878049 [DEBUG] addr: 0
+2016/06/12 22:39:02:878073 [DEBUG] rules->value->addr: 0
+2016/06/12 22:39:02:878096 [DEBUG] rules->value->mask: -1
+2016/06/12 22:39:02:878118 [DEBUG] access check: 0
+2016/06/12 22:39:02:878145 [DEBUG] evblen = 143
+2016/06/12 22:39:02:878173 [DEBUG] rmblen = 143
+2016/06/12 22:39:02:878325 [DEBUG] ============input: 00000000000000888888招商银行                                                                                                                                                    PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/12 22:39:02:878358 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/12 22:39:02:878394 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/12 22:39:02:878442 [DEBUG] ============usra DONE!===============
+2016/06/12 22:40:02:450325 [DEBUG] Paths Init Finished.
+2016/06/12 22:40:02:450443 [DEBUG] Begin to Start Httpd Server...
+2016/06/12 22:40:02:450473 [INFO] mnl started
+2016/06/12 22:40:02:450707 [DEBUG] thr_args alloc
+2016/06/12 22:40:02:450775 [DEBUG] luaL_newstate alloc
+2016/06/12 22:40:02:455892 [DEBUG] thr_args alloc
+2016/06/12 22:40:02:455995 [DEBUG] luaL_newstate alloc
+2016/06/12 22:40:07:390353 [DEBUG] Method: 2
+2016/06/12 22:40:07:390498 [DEBUG] rules: 0xa4d4c0
+2016/06/12 22:40:07:390561 [DEBUG] addr: 0
+2016/06/12 22:40:07:390612 [DEBUG] rules->value->addr: 1862379712
+2016/06/12 22:40:07:390659 [DEBUG] rules->value->mask: -1
+2016/06/12 22:40:07:390708 [DEBUG] addr: 0
+2016/06/12 22:40:07:390744 [DEBUG] rules->value->addr: 764096
+2016/06/12 22:40:07:390796 [DEBUG] rules->value->mask: 16777215
+2016/06/12 22:40:07:390832 [DEBUG] addr: 0
+2016/06/12 22:40:07:390869 [DEBUG] rules->value->addr: 0
+2016/06/12 22:40:07:390905 [DEBUG] rules->value->mask: -1
+2016/06/12 22:40:07:390941 [DEBUG] access check: 0
+2016/06/12 22:40:07:390977 [DEBUG] evblen = 143
+2016/06/12 22:40:07:391019 [DEBUG] rmblen = 143
+2016/06/12 22:40:07:391188 [DEBUG] ============input: 00000000000000888888d5d0c9ccd2f8d0d00000000000                                                                                                                                      PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/12 22:40:07:391228 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/12 22:40:07:391277 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/12 22:40:07:391337 [DEBUG] ============usra DONE!===============
+2016/06/12 22:44:40:818561 [DEBUG] Paths Init Finished.
+2016/06/12 22:44:40:824057 [DEBUG] Begin to Start Httpd Server...
+2016/06/12 22:44:40:824131 [INFO] mnl started
+2016/06/12 22:44:40:824443 [DEBUG] thr_args alloc
+2016/06/12 22:44:40:824521 [DEBUG] luaL_newstate alloc
+2016/06/12 22:44:40:829723 [DEBUG] thr_args alloc
+2016/06/12 22:44:40:829833 [DEBUG] luaL_newstate alloc
+2016/06/12 22:44:44:108115 [DEBUG] Paths Init Finished.
+2016/06/12 22:44:44:108227 [DEBUG] Begin to Start Httpd Server...
+2016/06/12 22:44:44:108258 [INFO] mnl started
+2016/06/12 22:44:44:108556 [DEBUG] thr_args alloc
+2016/06/12 22:44:44:108635 [DEBUG] luaL_newstate alloc
+2016/06/12 22:44:44:113810 [DEBUG] thr_args alloc
+2016/06/12 22:44:44:113886 [DEBUG] luaL_newstate alloc
+2016/06/12 22:44:50:999149 [DEBUG] Method: 2
+2016/06/12 22:44:50:999261 [DEBUG] rules: 0x10714c0
+2016/06/12 22:44:50:999310 [DEBUG] addr: 0
+2016/06/12 22:44:50:999354 [DEBUG] rules->value->addr: 1862379712
+2016/06/12 22:44:50:999395 [DEBUG] rules->value->mask: -1
+2016/06/12 22:44:50:999436 [DEBUG] addr: 0
+2016/06/12 22:44:50:999487 [DEBUG] rules->value->addr: 764096
+2016/06/12 22:44:50:999535 [DEBUG] rules->value->mask: 16777215
+2016/06/12 22:44:50:999577 [DEBUG] addr: 0
+2016/06/12 22:44:50:999615 [DEBUG] rules->value->addr: 0
+2016/06/12 22:44:50:999653 [DEBUG] rules->value->mask: -1
+2016/06/12 22:44:50:999693 [DEBUG] access check: 0
+2016/06/12 22:44:50:999738 [DEBUG] evblen = 143
+2016/06/12 22:44:50:999780 [DEBUG] rmblen = 143
+2016/06/12 22:44:50:999953 [DEBUG] ============input: 00000000000000888888d5d0c9ccd2f8d0d0                                                                                                                                                PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/12 22:44:50:999995 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/06/12 22:44:50:000052 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/06/12 22:44:50:000114 [DEBUG] ============usra DONE!===============

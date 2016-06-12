@@ -16,6 +16,8 @@ objs/mnl: objs/mnl.o \
 		objs/mnl_access.o \
 		objs/mnl_net.o \
 		objs/mnl_log.o \
+		objs/mnl_hex.o \
+		objs/mnl_iconv.o \
 		objs/mnl_string.o \
 		objs/mnl_utils.o \
 		objs/mnl_slock.o \
@@ -29,6 +31,8 @@ objs/mnl: objs/mnl.o \
 		objs/mnl_access.o \
 		objs/mnl_net.o \
 		objs/mnl_log.o \
+		objs/mnl_hex.o \
+		objs/mnl_iconv.o \
 		objs/mnl_string.o \
 		objs/mnl_utils.o \
 		objs/mnl_slock.o \
@@ -79,6 +83,18 @@ objs/mnl_log.o: src/mnl_log.c
 	$(CC) -c $(CFLAGS) $(INCLUDES) \
 		-o objs/mnl_log.o \
 		src/mnl_log.c
+
+objs/mnl_hex.o: src/mnl_hex.c
+
+	$(CC) -c $(CFLAGS) $(INCLUDES) \
+		-o objs/mnl_hex.o \
+		src/mnl_hex.c
+
+objs/mnl_iconv.o: src/mnl_iconv.c
+
+	$(CC) -c $(CFLAGS) $(INCLUDES) \
+		-o objs/mnl_iconv.o \
+		src/mnl_iconv.c
 
 objs/mnl_string.o: src/mnl_string.c
 

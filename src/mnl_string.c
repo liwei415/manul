@@ -136,20 +136,21 @@ size_t mnl_cpy_int(char *dst, const char *src, size_t size) {
   return (slen);
 }
 
-// copy two strings file blank on the right.
-size_t mnl_cpy_hex(char *dst, const char *src, size_t size) {
-  size_t srclen;
-  // Figure out how much room is needed...
-  size --;
-  srclen = strlen(src);
+// utf8 2 gbk and cpy
+size_t mnl_cpy_hex(char *dst, char *src, size_t size) {
 
-  // Copy the appropriate amount...
-  if (srclen > size) {
-    srclen = size;
-  }
+  char *gbk;
+  char *hex;
+  size_t slen = strlen(src);
 
-  memcpy(dst, src, srclen);
-  dst[srclen] = '\0';
+  gbk = calloc(slen+1, sizeof(char)); // utf8 to gbk 会变短, slen足够
+  hex = calloc(slen*2+1, sizeof(char));
 
-  return (srclen);
+  mnl_iconv("UTF-8", "GBK", src, strlen(src), gbk, slen);
+  mnl_hex_enc((uint8_t *)gbk, (uint8_t *)hex, strlen(gbk));
+  mnl_cpy_str(dst, hex, size);
+
+  free(gbk);
+  free(hex);
+  return (slen);
 }
