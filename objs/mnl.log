@@ -1431,3 +1431,361 @@
 2016/06/12 22:44:50:999995 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
 2016/06/12 22:44:50:000052 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
 2016/06/12 22:44:50:000114 [DEBUG] ============usra DONE!===============
+2016/07/19 19:24:31:257121 [DEBUG] Paths Init Finished.
+2016/07/19 19:24:31:257194 [DEBUG] Begin to Start Httpd Server...
+2016/07/19 19:24:31:257211 [INFO] mnl started
+2016/07/19 19:24:31:257399 [DEBUG] thr_args alloc
+2016/07/19 19:24:31:257449 [DEBUG] luaL_newstate alloc
+2016/07/19 19:24:31:262457 [DEBUG] thr_args alloc
+2016/07/19 19:24:31:262497 [DEBUG] luaL_newstate alloc
+2016/07/19 19:28:02:523179 [DEBUG] Paths Init Finished.
+2016/07/19 19:28:02:523352 [DEBUG] Begin to Start Httpd Server...
+2016/07/19 19:28:02:523399 [INFO] mnl started
+2016/07/19 19:28:02:523806 [DEBUG] thr_args alloc
+2016/07/19 19:28:02:523908 [DEBUG] luaL_newstate alloc
+2016/07/19 19:28:02:528816 [DEBUG] thr_args alloc
+2016/07/19 19:28:02:528876 [DEBUG] luaL_newstate alloc
+2016/07/19 19:34:20:868103 [DEBUG] Method: 0
+2016/07/19 19:34:20:868176 [DEBUG] Request Method Not Support.
+2016/07/19 19:34:20:868210 [DEBUG] post_error_list[2]: Request method error.
+2016/07/19 19:34:20:868252 [DEBUG] ret_str_unformat: {"ret":false,"error":{"code":2,"message":"Request method error."}}
+2016/07/19 19:34:20:868292 [DEBUG] ============usra ERROR!===============
+2016/07/19 19:34:42:457794 [DEBUG] Method: 0
+2016/07/19 19:34:42:457856 [DEBUG] Request Method Not Support.
+2016/07/19 19:34:42:457875 [DEBUG] post_error_list[2]: Request method error.
+2016/07/19 19:34:42:457902 [DEBUG] ret_str_unformat: {"ret":false,"error":{"code":2,"message":"Request method error."}}
+2016/07/19 19:34:42:457932 [DEBUG] ============usra ERROR!===============
+2016/07/19 20:26:49:900793 [DEBUG] Method: 0
+2016/07/19 20:26:49:900868 [DEBUG] Request Method Not Support.
+2016/07/19 20:26:49:911955 [DEBUG] post_error_list[2]: Request method error.
+2016/07/19 20:26:49:912021 [DEBUG] ret_str_unformat: {"ret":false,"error":{"code":2,"message":"Request method error."}}
+2016/07/19 20:26:49:912078 [DEBUG] ============test ERROR!===============
+2016/07/21 14:04:16:325592 [DEBUG] Paths Init Finished.
+2016/07/21 14:04:16:329951 [DEBUG] Begin to Start Httpd Server...
+2016/07/21 14:04:16:330064 [INFO] mnl started
+2016/07/21 14:04:16:330553 [DEBUG] thr_args alloc
+2016/07/21 14:04:16:330627 [DEBUG] luaL_newstate alloc
+2016/07/21 14:04:16:335657 [DEBUG] thr_args alloc
+2016/07/21 14:04:16:335736 [DEBUG] luaL_newstate alloc
+2016/07/21 14:04:23:643715 [DEBUG] Method: 2
+2016/07/21 14:04:23:643770 [DEBUG] rules: 0x1fdb4c0
+2016/07/21 14:04:23:643789 [DEBUG] addr: 0
+2016/07/21 14:04:23:643803 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 14:04:23:643816 [DEBUG] rules->value->mask: -1
+2016/07/21 14:04:23:643828 [DEBUG] addr: 0
+2016/07/21 14:04:23:643841 [DEBUG] rules->value->addr: 764096
+2016/07/21 14:04:23:643853 [DEBUG] rules->value->mask: 16777215
+2016/07/21 14:04:23:643866 [DEBUG] addr: 0
+2016/07/21 14:04:23:643878 [DEBUG] rules->value->addr: 0
+2016/07/21 14:04:23:643890 [DEBUG] rules->value->mask: -1
+2016/07/21 14:04:23:643902 [DEBUG] access check: 0
+2016/07/21 14:04:23:643917 [DEBUG] evblen = 143
+2016/07/21 14:04:23:643932 [DEBUG] rmblen = 143
+2016/07/21 14:04:23:644885 [DEBUG] ============input: 00000000000000888888d5d0c9ccd2f8d0d0                                                                                                                                                PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/07/21 14:04:23:644919 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/07/21 14:04:23:644943 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 14:04:23:644972 [DEBUG] ============usra DONE!===============
+2016/07/21 14:07:17:175909 [DEBUG] Method: 2
+2016/07/21 14:07:17:175962 [DEBUG] rules: 0x1fdb4c0
+2016/07/21 14:07:17:175979 [DEBUG] addr: 0
+2016/07/21 14:07:17:175993 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 14:07:17:176007 [DEBUG] rules->value->mask: -1
+2016/07/21 14:07:17:176020 [DEBUG] addr: 0
+2016/07/21 14:07:17:176042 [DEBUG] rules->value->addr: 764096
+2016/07/21 14:07:17:176056 [DEBUG] rules->value->mask: 16777215
+2016/07/21 14:07:17:176069 [DEBUG] addr: 0
+2016/07/21 14:07:17:176081 [DEBUG] rules->value->addr: 0
+2016/07/21 14:07:17:176094 [DEBUG] rules->value->mask: -1
+2016/07/21 14:07:17:176106 [DEBUG] access check: 0
+2016/07/21 14:07:17:176120 [DEBUG] evblen = 143
+2016/07/21 14:07:17:176134 [DEBUG] rmblen = 143
+2016/07/21 14:07:17:176161 [DEBUG] ============input: 00000000000000888888d5d0c9ccd2f8d0d0                                                                                                                                                PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/07/21 14:07:17:176176 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/07/21 14:07:17:176202 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 14:07:17:176234 [DEBUG] ============usra DONE!===============
+2016/07/21 14:07:55:057152 [DEBUG] Method: 2
+2016/07/21 14:07:55:057227 [DEBUG] rules: 0x1fdb4c0
+2016/07/21 14:07:55:057246 [DEBUG] addr: 0
+2016/07/21 14:07:55:057271 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 14:07:55:057284 [DEBUG] rules->value->mask: -1
+2016/07/21 14:07:55:057297 [DEBUG] addr: 0
+2016/07/21 14:07:55:057310 [DEBUG] rules->value->addr: 764096
+2016/07/21 14:07:55:057322 [DEBUG] rules->value->mask: 16777215
+2016/07/21 14:07:55:057335 [DEBUG] addr: 0
+2016/07/21 14:07:55:057348 [DEBUG] rules->value->addr: 0
+2016/07/21 14:07:55:057360 [DEBUG] rules->value->mask: -1
+2016/07/21 14:07:55:057373 [DEBUG] access check: 0
+2016/07/21 14:07:55:057386 [DEBUG] evblen = 143
+2016/07/21 14:07:55:057400 [DEBUG] rmblen = 143
+2016/07/21 14:07:55:057426 [DEBUG] ============input: 00000000000000888888d5d0c9ccd2f8d0d0                                                                                                                                                PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/07/21 14:07:55:057441 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/07/21 14:07:55:057460 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 14:07:55:057482 [DEBUG] ============usra DONE!===============
+2016/07/21 14:08:21:648758 [DEBUG] Method: 2
+2016/07/21 14:08:21:648809 [DEBUG] rules: 0x1fdb4c0
+2016/07/21 14:08:21:648826 [DEBUG] addr: 0
+2016/07/21 14:08:21:648840 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 14:08:21:648853 [DEBUG] rules->value->mask: -1
+2016/07/21 14:08:21:648865 [DEBUG] addr: 0
+2016/07/21 14:08:21:648878 [DEBUG] rules->value->addr: 764096
+2016/07/21 14:08:21:648891 [DEBUG] rules->value->mask: 16777215
+2016/07/21 14:08:21:648905 [DEBUG] addr: 0
+2016/07/21 14:08:21:648918 [DEBUG] rules->value->addr: 0
+2016/07/21 14:08:21:648931 [DEBUG] rules->value->mask: -1
+2016/07/21 14:08:21:648943 [DEBUG] access check: 0
+2016/07/21 14:08:21:648957 [DEBUG] evblen = 143
+2016/07/21 14:08:21:648971 [DEBUG] rmblen = 143
+2016/07/21 14:08:21:648996 [DEBUG] ============input: 00000000000000888888d5d0c9ccd2f8d0d0                                                                                                                                                PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/07/21 14:08:21:649019 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/07/21 14:08:21:649039 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 14:08:21:649062 [DEBUG] ============usra DONE!===============
+2016/07/21 14:09:25:026380 [DEBUG] Method: 2
+2016/07/21 14:09:25:026433 [DEBUG] rules: 0x1fdb4c0
+2016/07/21 14:09:25:026451 [DEBUG] addr: 0
+2016/07/21 14:09:25:026466 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 14:09:25:026480 [DEBUG] rules->value->mask: -1
+2016/07/21 14:09:25:026506 [DEBUG] addr: 0
+2016/07/21 14:09:25:026521 [DEBUG] rules->value->addr: 764096
+2016/07/21 14:09:25:026536 [DEBUG] rules->value->mask: 16777215
+2016/07/21 14:09:25:026551 [DEBUG] addr: 0
+2016/07/21 14:09:25:026566 [DEBUG] rules->value->addr: 0
+2016/07/21 14:09:25:026580 [DEBUG] rules->value->mask: -1
+2016/07/21 14:09:25:026595 [DEBUG] access check: 0
+2016/07/21 14:09:25:026610 [DEBUG] evblen = 143
+2016/07/21 14:09:25:026649 [DEBUG] rmblen = 143
+2016/07/21 14:09:25:026677 [DEBUG] ============input: 00000000000000888888d5d0c9ccd2f8d0d0                                                                                                                                                PP01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/07/21 14:09:25:026694 [DEBUG] ============input: P01522221198511061255            13120607077                                                                                                                                                                                                        ===============
+2016/07/21 14:09:25:026716 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 14:09:25:026742 [DEBUG] ============usra DONE!===============
+2016/07/21 15:10:01:735078 [DEBUG] Paths Init Finished.
+2016/07/21 15:10:01:735157 [DEBUG] Begin to Start Httpd Server...
+2016/07/21 15:10:01:735190 [INFO] mnl started
+2016/07/21 15:10:01:735348 [DEBUG] thr_args alloc
+2016/07/21 15:10:01:735397 [DEBUG] luaL_newstate alloc
+2016/07/21 15:10:01:740428 [DEBUG] thr_args alloc
+2016/07/21 15:10:01:740476 [DEBUG] luaL_newstate alloc
+2016/07/21 15:10:04:916666 [DEBUG] Method: 2
+2016/07/21 15:10:04:916732 [DEBUG] rules: 0x1d1d4c0
+2016/07/21 15:10:04:916761 [DEBUG] addr: 0
+2016/07/21 15:10:04:916787 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 15:10:04:916812 [DEBUG] rules->value->mask: -1
+2016/07/21 15:10:04:916836 [DEBUG] addr: 0
+2016/07/21 15:10:04:916859 [DEBUG] rules->value->addr: 764096
+2016/07/21 15:10:04:916878 [DEBUG] rules->value->mask: 16777215
+2016/07/21 15:10:04:916895 [DEBUG] addr: 0
+2016/07/21 15:10:04:916911 [DEBUG] rules->value->addr: 0
+2016/07/21 15:10:04:916926 [DEBUG] rules->value->mask: -1
+2016/07/21 15:10:04:916941 [DEBUG] access check: 0
+2016/07/21 15:10:04:916958 [DEBUG] evblen = 143
+2016/07/21 15:10:04:916976 [DEBUG] rmblen = 143
+2016/07/21 15:10:04:917078 [DEBUG] ============input: CMBA===============
+2016/07/21 15:10:04:917116 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 15:10:04:917148 [DEBUG] ============usra DONE!===============
+2016/07/21 15:53:53:164396 [DEBUG] Paths Init Finished.
+2016/07/21 15:53:53:164474 [DEBUG] Begin to Start Httpd Server...
+2016/07/21 15:53:53:164511 [INFO] mnl started
+2016/07/21 15:53:53:164678 [DEBUG] thr_args alloc
+2016/07/21 15:53:53:164728 [DEBUG] luaL_newstate alloc
+2016/07/21 15:53:53:169747 [DEBUG] thr_args alloc
+2016/07/21 15:53:53:169797 [DEBUG] luaL_newstate alloc
+2016/07/21 15:53:56:022298 [DEBUG] Method: 2
+2016/07/21 15:53:56:022361 [DEBUG] rules: 0xd594c0
+2016/07/21 15:53:56:022390 [DEBUG] addr: 0
+2016/07/21 15:53:56:022415 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 15:53:56:022449 [DEBUG] rules->value->mask: -1
+2016/07/21 15:53:56:022472 [DEBUG] addr: 0
+2016/07/21 15:53:56:022494 [DEBUG] rules->value->addr: 764096
+2016/07/21 15:53:56:022517 [DEBUG] rules->value->mask: 16777215
+2016/07/21 15:53:56:022538 [DEBUG] addr: 0
+2016/07/21 15:53:56:022559 [DEBUG] rules->value->addr: 0
+2016/07/21 15:53:56:022580 [DEBUG] rules->value->mask: -1
+2016/07/21 15:53:56:022601 [DEBUG] access check: 0
+2016/07/21 15:53:56:022625 [DEBUG] evblen = 235
+2016/07/21 15:53:56:022649 [DEBUG] rmblen = 235
+2016/07/21 15:53:56:022759 [DEBUG] ============input: CMBA===============
+2016/07/21 15:53:56:022791 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 15:53:56:022828 [DEBUG] ============usra DONE!===============
+2016/07/21 15:54:21:251356 [DEBUG] Method: 2
+2016/07/21 15:54:21:251408 [DEBUG] rules: 0xd594c0
+2016/07/21 15:54:21:251437 [DEBUG] addr: 0
+2016/07/21 15:54:21:251460 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 15:54:21:251484 [DEBUG] rules->value->mask: -1
+2016/07/21 15:54:21:251508 [DEBUG] addr: 0
+2016/07/21 15:54:21:251530 [DEBUG] rules->value->addr: 764096
+2016/07/21 15:54:21:251552 [DEBUG] rules->value->mask: 16777215
+2016/07/21 15:54:21:251574 [DEBUG] addr: 0
+2016/07/21 15:54:21:251596 [DEBUG] rules->value->addr: 0
+2016/07/21 15:54:21:251617 [DEBUG] rules->value->mask: -1
+2016/07/21 15:54:21:251638 [DEBUG] access check: 0
+2016/07/21 15:54:21:251661 [DEBUG] evblen = 237
+2016/07/21 15:54:21:251683 [DEBUG] rmblen = 237
+2016/07/21 15:54:21:251723 [DEBUG] ============input: CMBA===============
+2016/07/21 15:54:21:251752 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 15:54:21:251784 [DEBUG] ============usra DONE!===============
+2016/07/21 15:54:35:987900 [DEBUG] Method: 2
+2016/07/21 15:54:35:987953 [DEBUG] rules: 0xd594c0
+2016/07/21 15:54:35:987983 [DEBUG] addr: 0
+2016/07/21 15:54:35:988009 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 15:54:35:988031 [DEBUG] rules->value->mask: -1
+2016/07/21 15:54:35:988055 [DEBUG] addr: 0
+2016/07/21 15:54:35:988077 [DEBUG] rules->value->addr: 764096
+2016/07/21 15:54:35:988099 [DEBUG] rules->value->mask: 16777215
+2016/07/21 15:54:35:988122 [DEBUG] addr: 0
+2016/07/21 15:54:35:988145 [DEBUG] rules->value->addr: 0
+2016/07/21 15:54:35:988168 [DEBUG] rules->value->mask: -1
+2016/07/21 15:54:35:988195 [DEBUG] access check: 0
+2016/07/21 15:54:35:988223 [DEBUG] evblen = 231
+2016/07/21 15:54:35:988247 [DEBUG] rmblen = 231
+2016/07/21 15:54:35:988286 [DEBUG] ============input: CMBA===============
+2016/07/21 15:54:35:988316 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 15:54:35:988348 [DEBUG] ============usra DONE!===============
+2016/07/21 15:54:56:667911 [DEBUG] Method: 2
+2016/07/21 15:54:56:667976 [DEBUG] rules: 0xd594c0
+2016/07/21 15:54:56:679453 [DEBUG] addr: 0
+2016/07/21 15:54:56:679500 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 15:54:56:679516 [DEBUG] rules->value->mask: -1
+2016/07/21 15:54:56:679529 [DEBUG] addr: 0
+2016/07/21 15:54:56:679544 [DEBUG] rules->value->addr: 764096
+2016/07/21 15:54:56:679558 [DEBUG] rules->value->mask: 16777215
+2016/07/21 15:54:56:679571 [DEBUG] addr: 0
+2016/07/21 15:54:56:679584 [DEBUG] rules->value->addr: 0
+2016/07/21 15:54:56:679597 [DEBUG] rules->value->mask: -1
+2016/07/21 15:54:56:679611 [DEBUG] access check: 0
+2016/07/21 15:54:56:679628 [DEBUG] evblen = 231
+2016/07/21 15:54:56:679646 [DEBUG] rmblen = 231
+2016/07/21 15:54:56:679677 [DEBUG] ============input: CMBA===============
+2016/07/21 15:54:56:679705 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 15:54:56:679737 [DEBUG] ============usra DONE!===============
+2016/07/21 15:56:15:564432 [DEBUG] Method: 2
+2016/07/21 15:56:15:564496 [DEBUG] rules: 0xd594c0
+2016/07/21 15:56:15:564515 [DEBUG] addr: 0
+2016/07/21 15:56:15:564530 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 15:56:15:564548 [DEBUG] rules->value->mask: -1
+2016/07/21 15:56:15:564572 [DEBUG] addr: 0
+2016/07/21 15:56:15:564599 [DEBUG] rules->value->addr: 764096
+2016/07/21 15:56:15:564646 [DEBUG] rules->value->mask: 16777215
+2016/07/21 15:56:15:564670 [DEBUG] addr: 0
+2016/07/21 15:56:15:564715 [DEBUG] rules->value->addr: 0
+2016/07/21 15:56:15:564739 [DEBUG] rules->value->mask: -1
+2016/07/21 15:56:15:564764 [DEBUG] access check: 0
+2016/07/21 15:56:15:564790 [DEBUG] evblen = 231
+2016/07/21 15:56:15:564817 [DEBUG] rmblen = 231
+2016/07/21 15:56:15:564862 [DEBUG] ============input: CMBA===============
+2016/07/21 15:56:15:564894 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 15:56:15:564932 [DEBUG] ============usra DONE!===============
+2016/07/21 15:56:38:620817 [DEBUG] Method: 2
+2016/07/21 15:56:38:620884 [DEBUG] rules: 0xd594c0
+2016/07/21 15:56:38:620927 [DEBUG] addr: 0
+2016/07/21 15:56:38:620951 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 15:56:38:620968 [DEBUG] rules->value->mask: -1
+2016/07/21 15:56:38:620983 [DEBUG] addr: 0
+2016/07/21 15:56:38:620998 [DEBUG] rules->value->addr: 764096
+2016/07/21 15:56:38:621012 [DEBUG] rules->value->mask: 16777215
+2016/07/21 15:56:38:621026 [DEBUG] addr: 0
+2016/07/21 15:56:38:621041 [DEBUG] rules->value->addr: 0
+2016/07/21 15:56:38:621055 [DEBUG] rules->value->mask: -1
+2016/07/21 15:56:38:621070 [DEBUG] access check: 0
+2016/07/21 15:56:38:621085 [DEBUG] evblen = 231
+2016/07/21 15:56:38:621102 [DEBUG] rmblen = 231
+2016/07/21 15:56:38:621132 [DEBUG] ============input: CMBA===============
+2016/07/21 15:56:38:621154 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 15:56:38:621180 [DEBUG] ============usra DONE!===============
+2016/07/21 15:57:03:668908 [DEBUG] Method: 2
+2016/07/21 15:57:03:668957 [DEBUG] rules: 0xd594c0
+2016/07/21 15:57:03:668986 [DEBUG] addr: 0
+2016/07/21 15:57:03:669011 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 15:57:03:669038 [DEBUG] rules->value->mask: -1
+2016/07/21 15:57:03:669053 [DEBUG] addr: 0
+2016/07/21 15:57:03:669066 [DEBUG] rules->value->addr: 764096
+2016/07/21 15:57:03:669081 [DEBUG] rules->value->mask: 16777215
+2016/07/21 15:57:03:669095 [DEBUG] addr: 0
+2016/07/21 15:57:03:669108 [DEBUG] rules->value->addr: 0
+2016/07/21 15:57:03:669123 [DEBUG] rules->value->mask: -1
+2016/07/21 15:57:03:669137 [DEBUG] access check: 0
+2016/07/21 15:57:03:669151 [DEBUG] evblen = 231
+2016/07/21 15:57:03:669167 [DEBUG] rmblen = 231
+2016/07/21 15:57:03:669205 [DEBUG] ============input: CMBA===============
+2016/07/21 15:57:03:669230 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 15:57:03:669254 [DEBUG] ============usra DONE!===============
+2016/07/21 15:58:32:406808 [DEBUG] Method: 2
+2016/07/21 15:58:32:406870 [DEBUG] rules: 0xd594c0
+2016/07/21 15:58:32:406891 [DEBUG] addr: 0
+2016/07/21 15:58:32:406907 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 15:58:32:406922 [DEBUG] rules->value->mask: -1
+2016/07/21 15:58:32:406939 [DEBUG] addr: 0
+2016/07/21 15:58:32:406970 [DEBUG] rules->value->addr: 764096
+2016/07/21 15:58:32:406985 [DEBUG] rules->value->mask: 16777215
+2016/07/21 15:58:32:406999 [DEBUG] addr: 0
+2016/07/21 15:58:32:407014 [DEBUG] rules->value->addr: 0
+2016/07/21 15:58:32:407029 [DEBUG] rules->value->mask: -1
+2016/07/21 15:58:32:407042 [DEBUG] access check: 0
+2016/07/21 15:58:32:407056 [DEBUG] evblen = 231
+2016/07/21 15:58:32:407071 [DEBUG] rmblen = 231
+2016/07/21 15:58:32:407102 [DEBUG] ============input: CMBA===============
+2016/07/21 15:58:32:407148 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 15:58:32:407181 [DEBUG] ============usra DONE!===============
+2016/07/21 15:59:00:733096 [DEBUG] Method: 2
+2016/07/21 15:59:00:733160 [DEBUG] rules: 0xd594c0
+2016/07/21 15:59:00:733178 [DEBUG] addr: 0
+2016/07/21 15:59:00:733202 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 15:59:00:733216 [DEBUG] rules->value->mask: -1
+2016/07/21 15:59:00:733229 [DEBUG] addr: 0
+2016/07/21 15:59:00:733244 [DEBUG] rules->value->addr: 764096
+2016/07/21 15:59:00:733258 [DEBUG] rules->value->mask: 16777215
+2016/07/21 15:59:00:733272 [DEBUG] addr: 0
+2016/07/21 15:59:00:733285 [DEBUG] rules->value->addr: 0
+2016/07/21 15:59:00:733299 [DEBUG] rules->value->mask: -1
+2016/07/21 15:59:00:733313 [DEBUG] access check: 0
+2016/07/21 15:59:00:733328 [DEBUG] evblen = 236
+2016/07/21 15:59:00:733344 [DEBUG] rmblen = 236
+2016/07/21 15:59:00:733374 [DEBUG] ============input: CMBA===============
+2016/07/21 15:59:00:733397 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 15:59:00:733421 [DEBUG] ============usra DONE!===============
+2016/07/21 16:37:25:146814 [DEBUG] Paths Init Finished.
+2016/07/21 16:37:25:146888 [DEBUG] Begin to Start Httpd Server...
+2016/07/21 16:37:25:146905 [INFO] mnl started
+2016/07/21 16:37:25:147084 [DEBUG] thr_args alloc
+2016/07/21 16:37:25:147125 [DEBUG] luaL_newstate alloc
+2016/07/21 16:37:25:152138 [DEBUG] thr_args alloc
+2016/07/21 16:37:25:152183 [DEBUG] luaL_newstate alloc
+2016/07/21 16:37:28:089952 [DEBUG] Method: 2
+2016/07/21 16:37:28:090011 [DEBUG] rules: 0x20a24c0
+2016/07/21 16:37:28:090029 [DEBUG] addr: 0
+2016/07/21 16:37:28:090044 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 16:37:28:090061 [DEBUG] rules->value->mask: -1
+2016/07/21 16:37:28:090076 [DEBUG] addr: 0
+2016/07/21 16:37:28:090090 [DEBUG] rules->value->addr: 764096
+2016/07/21 16:37:28:090104 [DEBUG] rules->value->mask: 16777215
+2016/07/21 16:37:28:090129 [DEBUG] addr: 0
+2016/07/21 16:37:28:090144 [DEBUG] rules->value->addr: 0
+2016/07/21 16:37:28:090159 [DEBUG] rules->value->mask: -1
+2016/07/21 16:37:28:090174 [DEBUG] access check: 0
+2016/07/21 16:37:28:090201 [DEBUG] evblen = 236
+2016/07/21 16:37:28:090221 [DEBUG] rmblen = 236
+2016/07/21 16:37:28:090320 [DEBUG] ============input: CMBA558===============
+2016/07/21 16:37:28:090347 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 16:37:28:090378 [DEBUG] ============usra DONE!===============
+2016/07/21 16:40:37:133233 [DEBUG] Paths Init Finished.
+2016/07/21 16:40:37:133313 [DEBUG] Begin to Start Httpd Server...
+2016/07/21 16:40:37:133331 [INFO] mnl started
+2016/07/21 16:40:37:133494 [DEBUG] thr_args alloc
+2016/07/21 16:40:37:133537 [DEBUG] luaL_newstate alloc
+2016/07/21 16:40:37:138568 [DEBUG] thr_args alloc
+2016/07/21 16:40:37:138619 [DEBUG] luaL_newstate alloc
+2016/07/21 16:40:52:668641 [DEBUG] Method: 2
+2016/07/21 16:40:52:668698 [DEBUG] rules: 0x237c4c0
+2016/07/21 16:40:52:668717 [DEBUG] addr: 0
+2016/07/21 16:40:52:668733 [DEBUG] rules->value->addr: 1862379712
+2016/07/21 16:40:52:668748 [DEBUG] rules->value->mask: -1
+2016/07/21 16:40:52:668763 [DEBUG] addr: 0
+2016/07/21 16:40:52:668778 [DEBUG] rules->value->addr: 764096
+2016/07/21 16:40:52:668792 [DEBUG] rules->value->mask: 16777215
+2016/07/21 16:40:52:668807 [DEBUG] addr: 0
+2016/07/21 16:40:52:668822 [DEBUG] rules->value->addr: 0
+2016/07/21 16:40:52:668836 [DEBUG] rules->value->mask: -1
+2016/07/21 16:40:52:668851 [DEBUG] access check: 0
+2016/07/21 16:40:52:668868 [DEBUG] evblen = 236
+2016/07/21 16:40:52:668886 [DEBUG] rmblen = 236
+2016/07/21 16:40:52:668988 [DEBUG] ============input: CMBA0558USRA                                            20160721164052txn1469090452                 PLATCODE  ===============
+2016/07/21 16:40:52:669015 [DEBUG] ret_str_unformat: {"ret":true,"info":{"code":"","uid":"","tuid":"","desc":"","spare":""}}
+2016/07/21 16:40:52:669045 [DEBUG] ============usra DONE!===============

@@ -33,7 +33,7 @@ static const char *post_error_list[] = {
   "Image not existed.",
   "Delete resource failed.",
   "Wrong input params.",
-  "Wrong Json Node."
+  "Wrong Json Node.",
 };
 
 int _cbs_usra_build(char *buf, mnl_req_usra_t *mnl_req) {
@@ -85,14 +85,53 @@ int _cbs_usra_build(char *buf, mnl_req_usra_t *mnl_req) {
   }
   mnl_cpy_str(mnl_req->spare, chd->valuestring, 200);
 
+  // 包长度处理
+  char plen[8];
+  sprintf(plen, "%d", (int)sizeof(mnl_req_usra_t));
+
+  mnl_cpy_str(mnl_req->flag, "CMBA", 4);
+  mnl_cpy_int(mnl_req->len, plen, 4);
+  mnl_cpy_str(mnl_req->biz, "USRA", 4);
+  mnl_cpy_str(mnl_req->bank_date, " ", 8);
+  mnl_cpy_str(mnl_req->bank_time, " ", 6);
+  mnl_cpy_str(mnl_req->bank_no, " ", 30);
+
+  chd = cJSON_GetObjectItem(root, "plat_date");
+  if (chd == NULL) {
+    goto jerr;
+  }
+  mnl_cpy_str(mnl_req->plat_date, chd->valuestring, 8);
+
+  chd = cJSON_GetObjectItem(root, "plat_time");
+  if (chd == NULL) {
+    goto jerr;
+  }
+  mnl_cpy_str(mnl_req->plat_time, chd->valuestring, 6);
+
+  chd = cJSON_GetObjectItem(root, "plat_no");
+  if (chd == NULL) {
+    goto jerr;
+  }
+  mnl_cpy_str(mnl_req->plat_no, chd->valuestring, 30);
+
+  chd = cJSON_GetObjectItem(root, "plat_code");
+  if (chd == NULL) {
+    goto jerr;
+  }
+  mnl_cpy_str(mnl_req->plat_code, chd->valuestring, 10);
+
+  mnl_cpy_str(mnl_req->comm_code, " ", 7);
+
+  // mnl_mac_cal(mnl_req, sizeof(mnl_req_usra_t), key, mnl_req->comm_vcode);
+
   goto done;
 
  jerr:
   cJSON_Delete(root);
-  return -2;
+  return -12;
 
  err:
-  return -1;
+  return -11;
 
  done:
   cJSON_Delete(root);
@@ -235,26 +274,18 @@ void mnl_cbs_usra_post(evhtp_request_t *req, void *arg)
     }
   }
 
-  // 处理json输入
+  // 业务逻辑处理
+
+  // 1.build 请求包
   mnl_req = (mnl_req_usra_t *)calloc(1, sizeof(mnl_req_usra_t));
 
   int jerr = _cbs_usra_build(buff, mnl_req);
-  if (jerr == -2) {
-    err_no = -12;
+  if (jerr != 0) {
+    err_no = jerr;
     goto err;
   }
 
-  if (jerr == -1) {
-    err_no = -11;
-    goto err;
-  }
-
-  LOG_PRINT(LOG_DEBUG, "============input: %s===============", mnl_req->uid);
-  LOG_PRINT(LOG_DEBUG, "============input: %s===============", mnl_req->cert);
-
-  // 业务逻辑处理
-  // 1.build 请求包
-
+  LOG_PRINT(LOG_DEBUG, "============input: %s===============", mnl_req->flag);
 
   // 2.远端服务器交互
   //  int sockfd = mnl_net_conn(vars.remote_ip, vars.remote_port);

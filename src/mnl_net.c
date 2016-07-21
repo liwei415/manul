@@ -1,6 +1,7 @@
 #include "mnl_net.h"
 
 int mnl_net_conn(char *serv, int port) {
+
   int sockfd, error;
   struct hostent *host;
   struct sockaddr_in serv_addr;
