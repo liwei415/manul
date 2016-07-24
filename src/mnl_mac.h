@@ -7,6 +7,8 @@
 #include <stdlib.h>
 #include <openssl/des.h>
 
-void mnl_mac(uint8_t *ibuf, uint8_t *obuf, uint8_t *ikey, size_t ilen);
+#include "mnl_common.h"
+
+void *mnl_mac_enc(char *ibuf, char *obuf, char *ikey);
 
 #endif

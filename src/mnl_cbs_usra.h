@@ -11,6 +11,7 @@
 #include "mnl_cbs.h"
 #include "mnl_string.h"
 #include "mnl_access.h"
+#include "mnl_mac.h"
 #include "mnl_common.h"
 
 typedef struct mnl_req_usra_s mnl_req_usra_t;

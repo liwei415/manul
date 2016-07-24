@@ -32,6 +32,7 @@ objs/mnl: objs/mnl.o \
 		objs/mnl_access.o \
 		objs/mnl_net.o \
 		objs/mnl_log.o \
+		objs/mnl_mac.o \
 		objs/mnl_hex.o \
 		objs/mnl_iconv.o \
 		objs/mnl_string.o \

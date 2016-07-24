@@ -84,7 +84,7 @@ unsigned char *_hex2bin(const char *data, int size, int *outlen)
   return out;
 }
 
-void _des(char *data, char *obuf, char *ikey) {
+void _des_enc(char *ibuf, char *obuf, char *ikey) {
 
   DES_key_schedule ks;
 
@@ -96,8 +96,8 @@ void _des(char *data, char *obuf, char *ikey) {
   unsigned char ch = '\0';
   unsigned char *ptr = NULL;
 
-  unsigned char src[16] = {0}; /* 补齐后的明文, data补齐后的1/2长度 */
-  unsigned char dst[16] = {0}; /* 解密后的明文, data补齐后的1/2长度 */
+  unsigned char src[16] = {0}; /* 补齐后的明文, ibuf补齐后的1/2长度 */
+  unsigned char dst[16] = {0}; /* 解密后的明文, ibuf补齐后的1/2长度 */
 
   unsigned char out[8] = {0};
   unsigned char tmp[8] = {0};
@@ -110,8 +110,8 @@ void _des(char *data, char *obuf, char *ikey) {
   DES_set_key_unchecked((const_DES_cblock*)block, &ks);
 
   /* 分析补齐明文所需空间及补齐填充数据 */
-  len = strlen((char *)data);
-  ptr = _hex2bin(data, len, &nlen);
+  len = strlen((char *)ibuf);
+  ptr = _hex2bin(ibuf, len, &nlen);
   len = (nlen / 8 + (nlen % 8 ? 1: 0)) * 8;
   memcpy(src, ptr, len);
   free(ptr);
@@ -126,12 +126,67 @@ void _des(char *data, char *obuf, char *ikey) {
     DES_ecb_encrypt((const_DES_cblock*)tmp, (DES_cblock*)out, &ks, DES_ENCRYPT);
     memcpy(dst + 8 * i, out, 8);
   }
-
+  LOG_PRINT(LOG_DEBUG, "tttttttttttttttttttttttttttdst: %s", dst);
   memcpy(obuf, dst, len);
 }
 
-void mnl_mac(char *ibuf, char *obuf, char *key, size_t ilen) {
+char *_strupr(char *str) {
+  char *ori = str;
+  for (; *str != '\0'; str++) {
+    if (*str >= 'a' && *str <='z') {
+      *str += 'A' - 'a';
+    }
+  }
+  return ori;
+}
 
+//ASCII码中将字符转换成对应的十进制数
+int _char2int(char input) {
+  return input > 64 ? (input-55) : (input-48);
+}
+
+//ASCII码中将十进制数转换成对应的字符
+int _int2char(char input) {
+  return input > 9 ? (input + 55) : (input + 48);
+}
+
+//将十六进制字符串HexStr1和HexStr2异或得到HexStr
+void _hex_xor(char *HexStr1, char *HexStr2, char *HexStr) {
+  int i, iHexStr1Len, iHexStr2Len, iHexStrLenLow, iHexStrLenGap;
+
+  //转换成大写并求长度
+  _strupr(HexStr1);
+  _strupr(HexStr2);
+  iHexStr1Len = strlen(HexStr1);
+  iHexStr2Len = strlen(HexStr2);
+
+  //获取最小的长度
+  iHexStrLenLow = iHexStr1Len < iHexStr2Len ? iHexStr1Len : iHexStr2Len;
+
+  //获取长度差值
+  iHexStrLenGap = abs(iHexStr1Len - iHexStr2Len);
+
+  //两个十六进制的字符串进行异或
+  for(i = 0; i < iHexStrLenLow; i++) {
+    *(HexStr+i) = _char2int(HexStr1[i]) ^ _char2int(HexStr2[i]);
+    *(HexStr+i) = _int2char(*(HexStr+i));
+  }
+  if(iHexStr1Len>iHexStr2Len ) {
+    memcpy( HexStr+i, HexStr1+i, iHexStrLenGap );
+  }
+  else if( iHexStr1Len<iHexStr2Len ) {
+    memcpy( HexStr+i, HexStr2+i, iHexStrLenGap );
+  }
+  *( HexStr+iHexStrLenLow+iHexStrLenGap ) = 0x00;
+}
+
+void *mnl_mac_enc(char *ibuf, char *obuf, char *ikey) {
+
+  _des_enc(ibuf, obuf, ikey);
+  //_hex_xor("668238793CC5C6C4", "616E206578616D70", obuf);
+
+  return NULL;
+  /*
   uint8_t val[8], xor[8];
   uint8_t block[512];
 
@@ -153,4 +208,5 @@ void mnl_mac(char *ibuf, char *obuf, char *key, size_t ilen) {
     _des((char *)xor, (char *)val, (char *)ikey);
   }
   memcpy(obuf,val, 8 );
+  */
 }

@@ -122,7 +122,9 @@ int _cbs_usra_build(char *buf, mnl_req_usra_t *mnl_req) {
 
   mnl_cpy_str(mnl_req->comm_code, " ", 7);
 
-  // mnl_mac_cal(mnl_req, sizeof(mnl_req_usra_t), key, mnl_req->comm_vcode);
+  char tt[16] = {0};
+  mnl_mac_enc("0393BF6CE2353175", tt, "9999999999999999");
+  LOG_PRINT(LOG_DEBUG, "ttttttttttttttttttttttttttt: %s", tt);
 
   goto done;
 
