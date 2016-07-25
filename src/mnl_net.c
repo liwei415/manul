@@ -46,40 +46,27 @@ int mnl_net_disconn(sockfd)
   return 0
 }
 
-int mnl_net_wt(int sockfd, char *cmd, char *res_buf)
+int mnl_net_wt(int sockfd, char *ibuf, char *obuf)
 {
-  /* // Send cmd */
-  /* // 2 terminators */
-  /* uint16_t out_buf_len = sizeof(atm_mtpe_data_packet_t) - CMD_LEN + strlen(cmd) + 2; */
 
-  /* char out_buf[out_buf_len]; */
-  /* size_t out_size = atm_mtpe_build_data_packet(c, cmd, out_buf); */
-  /* if (send(c->sockfd, out_buf, out_size, MSG_NOSIGNAL)) { */
-  /*   // Response */
-  /*   if (atm_net_tcp_rd(c, res_buf) == 0) { */
-  /*     char *e = strrchr(res_buf, '\r'); */
-  /*     /\* Create start and end for res_buf *\/ */
-  /*     if (e != NULL) { */
-  /*       *(e+1) = '\0'; */
-  /*     } */
-  /*   } */
-  /*   else { */
-  /*     strcpy(res_buf, "RD FAILED!"); */
-  /*     perror("data tcp rd failed"); */
-  /*     c->err = -2; */
-  /*   } */
-  /* } */
-  /* else { */
-  /*   strcpy(res_buf, "WT FAILED!"); */
-  /*   perror("data tcp wt failed"); */
-  /*   c->err = -1; */
-  /* } */
-
+  int ilen = strlen(ibuf);
+  if (!send(sockfd, ibuf, ilen, MSG_NOSIGNAL)) {
+    return -1;
+  }
   return 0;
 }
 
-int mnl_net_rd(int sockfd, char *buf)
+int mnl_net_rd(int sockfd, char *obuf)
 {
+
+  // 1.取包头
+
+  // 2.计算包体总长度(一定是固定长度?)
+
+  // 3.取包体
+
+  // 4.
+
   /* int recv_l = 0, recv_n = 0, recv_c = 0; */
   /* char t_buf[32]; */
   /* int bts; */
