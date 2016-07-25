@@ -16,7 +16,7 @@
 
 typedef struct mnl_req_usra_s mnl_req_usra_t;
 struct mnl_req_usra_s {
-  //包头
+  //header
   char flag[4];
   char len[4];
   char biz[4];
@@ -29,7 +29,7 @@ struct mnl_req_usra_s {
   char plat_code[10];
   char comm_code[7];
   char comm_vcode[16];
-  //包体
+  //body
   char uid[20];
   char username[160];
   char type[1];
@@ -41,6 +41,20 @@ struct mnl_req_usra_s {
 
 typedef struct mnl_res_usra_s mnl_res_usra_t;
 struct mnl_res_usra_s {
+  //header
+  char flag[4];
+  char len[4];
+  char biz[4];
+  char bank_date[8];
+  char bank_time[6];
+  char bank_no[30];
+  char plat_date[8];
+  char plat_time[6];
+  char plat_no[30];
+  char plat_code[10];
+  char comm_code[7];
+  char comm_vcode[16];
+  //body
   char code[7+1];
   char uid[20+1];
   char tuid[30+1];

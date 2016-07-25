@@ -43,6 +43,7 @@ int _cbs_usra_build(char *buf, mnl_req_usra_t *mnl_req) {
     goto err;
   }
 
+  // body
   chd = cJSON_GetObjectItem(root, "uid");
   if (chd == NULL) {
     goto jerr;
@@ -85,7 +86,7 @@ int _cbs_usra_build(char *buf, mnl_req_usra_t *mnl_req) {
   }
   mnl_cpy_str(mnl_req->spare, chd->valuestring, 200);
 
-  // 包长度处理
+  // header
   char plen[8];
   sprintf(plen, "%d", (int)sizeof(mnl_req_usra_t));
 
@@ -114,17 +115,13 @@ int _cbs_usra_build(char *buf, mnl_req_usra_t *mnl_req) {
   }
   mnl_cpy_str(mnl_req->plat_no, chd->valuestring, 30);
 
-  chd = cJSON_GetObjectItem(root, "plat_code");
-  if (chd == NULL) {
-    goto jerr;
-  }
-  mnl_cpy_str(mnl_req->plat_code, chd->valuestring, 10);
 
+  mnl_cpy_str(mnl_req->plat_code, vars.plat_code, 10);
   mnl_cpy_str(mnl_req->comm_code, " ", 7);
 
-  char tt[16] = {0};
-  mnl_mac_enc("0393BF6CE2353175", tt, "9999999999999999");
-  LOG_PRINT(LOG_DEBUG, "ttttttttttttttttttttttttttt: %s", tt);
+  char *vcode = calloc(2*strlen((char *)mnl_req->uid)+1, sizeof(char));
+  mnl_conv_hex(vcode, (char *)mnl_req->uid);
+  mnl_mac_enc(vcode, mnl_req->comm_vcode, vars.plat_key);
 
   goto done;
 
@@ -279,7 +276,7 @@ void mnl_cbs_usra_post(evhtp_request_t *req, void *arg)
   // 业务逻辑处理
 
   // 1.build 请求包
-  mnl_req = (mnl_req_usra_t *)calloc(1, sizeof(mnl_req_usra_t));
+  mnl_req = calloc(1, sizeof(mnl_req_usra_t));
 
   int jerr = _cbs_usra_build(buff, mnl_req);
   if (jerr != 0) {
@@ -287,15 +284,15 @@ void mnl_cbs_usra_post(evhtp_request_t *req, void *arg)
     goto err;
   }
 
-  LOG_PRINT(LOG_DEBUG, "============input: %s===============", mnl_req->flag);
+  LOG_PRINT(LOG_DEBUG, "============input123123: %s===============", (char *)mnl_req);
 
   // 2.远端服务器交互
-  //  int sockfd = mnl_net_conn(vars.remote_ip, vars.remote_port);
+  int sockfd = mnl_net_conn(vars.remote_ip, vars.remote_port);
 
   // 3.dissect 返回包
 
 
-  mnl_res = (mnl_res_usra_t *)calloc(1, sizeof(mnl_res_usra_t));
+  mnl_res = calloc(1, sizeof(mnl_res_usra_t));
 
   //业务逻辑处理成功
   err_no = -1;

@@ -128,6 +128,36 @@ static int load_conf(const char *conf)
   }
   lua_pop(L, 1);
 
+  lua_getglobal(L, "plat_code");
+  if(lua_isstring(L, -1)) {
+    mnl_strlcpy(vars.plat_code, lua_tostring(L, -1), sizeof(vars.plat_code));
+  }
+  lua_pop(L, 1);
+
+  lua_getglobal(L, "plat_key");
+  if(lua_isstring(L, -1)) {
+    mnl_strlcpy(vars.plat_key, lua_tostring(L, -1), sizeof(vars.plat_key));
+  }
+  lua_pop(L, 1);
+
+  lua_getglobal(L, "ftp_user");
+  if(lua_isstring(L, -1)) {
+    mnl_strlcpy(vars.ftp_user, lua_tostring(L, -1), sizeof(vars.ftp_user));
+  }
+  lua_pop(L, 1);
+
+  lua_getglobal(L, "ftp_pass");
+  if(lua_isstring(L, -1)) {
+    mnl_strlcpy(vars.ftp_pass, lua_tostring(L, -1), sizeof(vars.ftp_pass));
+  }
+  lua_pop(L, 1);
+
+  lua_getglobal(L, "ftp_port");
+  if(lua_isnumber(L, -1)) {
+    vars.ftp_port = (int)lua_tonumber(L, -1);
+  }
+  lua_pop(L, 1);
+
   vars.L = L;
   //lua_close(L);
 

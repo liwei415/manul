@@ -83,6 +83,11 @@ struct mnl_vars_s {
   mnl_access_conf_t *access;
   char remote_ip[128];
   int remote_port;
+  char plat_code[32];
+  char plat_key[32];
+  char ftp_user[32];
+  char ftp_pass[32];
+  int ftp_port;
 };
 
 extern mnl_vars_t vars;

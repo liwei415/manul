@@ -19,7 +19,7 @@ function http_post_data($url, $data_string) {
 
 $url  = "http://127.0.0.1:9528/usra";
 
-$data = json_encode(array('plat_date'=>date('Ymd'),'plat_time'=>date('His'),'plat_no'=>'txn'.time(),'plat_code'=>'8888021655','uid'=>'888888', 'username' => '招商银行', 'type' => 'P', 'cert' => 'P01', 'cert_no' => '522221198511061255', 'mobile' => '13120607077', 'spare' => ''));
+$data = json_encode(array('plat_date'=>date('Ymd'),'plat_time'=>date('His'),'plat_no'=>'txn'.time(),'uid'=>'888888', 'username' => '招商银行', 'type' => 'P', 'cert' => 'P01', 'cert_no' => '522221198511061255', 'mobile' => '13120607077', 'spare' => ''));
 $r = http_post_data($url, $data);
 
 var_dump($data);

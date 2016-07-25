@@ -16,5 +16,6 @@ size_t mnl_strlcpy(char *dst, const char *src, size_t size);
 size_t mnl_cpy_str(char *dst, const char *src, size_t size);
 size_t mnl_cpy_int(char *dst, const char *src, size_t size);
 size_t mnl_cpy_hex(char *dst, char *src, size_t size);
+void mnl_conv_hex(char *obuf, char *ibuf);
 
 #endif

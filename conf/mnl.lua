@@ -51,3 +51,12 @@ max_size = 10*1024*1024
 remote_ip = '127.0.0.1'
 --端口
 remote_port = 9528
+
+--平台
+plat_code = '12341234'
+plat_key = '0000000000000000'
+
+--ftp
+ftp_user = '1231234'
+ftp_pass = 'asdfasdf'
+ftp_port = '1234'

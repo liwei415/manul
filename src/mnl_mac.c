@@ -126,8 +126,11 @@ void _des_enc(char *ibuf, char *obuf, char *ikey) {
     DES_ecb_encrypt((const_DES_cblock*)tmp, (DES_cblock*)out, &ks, DES_ENCRYPT);
     memcpy(dst + 8 * i, out, 8);
   }
-  LOG_PRINT(LOG_DEBUG, "tttttttttttttttttttttttttttdst: %s", dst);
-  memcpy(obuf, dst, len);
+
+  for (i = 0; i < len; i++) {
+    sprintf(obuf+2*i, "%.2X", *(dst + i));
+  }
+
 }
 
 char *_strupr(char *str) {
@@ -182,31 +185,35 @@ void _hex_xor(char *HexStr1, char *HexStr2, char *HexStr) {
 
 void *mnl_mac_enc(char *ibuf, char *obuf, char *ikey) {
 
-  _des_enc(ibuf, obuf, ikey);
-  //_hex_xor("668238793CC5C6C4", "616E206578616D70", obuf);
+  char block[16+1] = {0}, val[16+1] = {0}, xor[16+1] = {0};
+  int x, n, i, j, ilen;
+
+  ilen = strlen(ibuf);
+  x = ilen / 16;
+  n = ilen % 16;
+
+  //不能除尽，多做一个循环
+  if (n > 0) {
+    x++;
+  }
+
+  strncpy(val, "0000000000000000", 16);
+  for (i = 0; i < x; i++) {
+    if (ilen - i * 16 < 16) {
+      strncpy(block, ibuf + i * 16, 16 - n);
+      for (j = n; j < 16; j++) {
+        block[j] = '0';
+      }
+    }
+    else {
+      strncpy(block, ibuf + i * 16, 16);
+    }
+
+    _hex_xor(block, val, xor);
+    _des_enc(xor, val, ikey);
+  }
+
+  strncpy(obuf, val, 16);
 
   return NULL;
-  /*
-  uint8_t val[8], xor[8];
-  uint8_t block[512];
-
-  int x, n;
-  int i, j = 0;
-
-  memcpy(block, ibuf, ilen);
-  x = ilen / 8;
-  n = ilen % 8;
-  if (n != 0) {
-    memset(&block[x * 8 + n], 0x00, 8 - n);
-    x += 1;
-  }
-
-  //开始运算
-  memset(val, 0x00, 8);
-  for(i = 0; i < x; i++, j += 8) {
-    xor = val ^ &block[j];
-    _des((char *)xor, (char *)val, (char *)ikey);
-  }
-  memcpy(obuf,val, 8 );
-  */
 }
