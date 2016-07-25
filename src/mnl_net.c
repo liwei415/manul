@@ -46,17 +46,16 @@ int mnl_net_disconn(sockfd)
   return 0
 }
 
-int mnl_net_wt(int sockfd, char *ibuf, char *obuf)
+int mnl_net_wt(int sockfd, char *ibuf, int ilen)
 {
 
-  int ilen = strlen(ibuf);
   if (!send(sockfd, ibuf, ilen, MSG_NOSIGNAL)) {
     return -1;
   }
   return 0;
 }
 
-int mnl_net_rd(int sockfd, char *obuf)
+int mnl_net_rd(int sockfd, char *obuf, int olen)
 {
 
   // 1.取包头
