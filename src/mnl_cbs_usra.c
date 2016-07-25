@@ -290,8 +290,6 @@ void mnl_cbs_usra_post(evhtp_request_t *req, void *arg)
   int sockfd = mnl_net_conn(vars.remote_ip, vars.remote_port);
 
   // 3.dissect 返回包
-
-
   mnl_res = calloc(1, sizeof(mnl_res_usra_t));
 
   //业务逻辑处理成功

@@ -6,8 +6,8 @@ int mnl_net_conn(char *serv, int port) {
   struct hostent *host;
   struct sockaddr_in serv_addr;
 
-  /* 45秒无结果断开 */
-  struct timeval timeout = {45, 0};
+  /* 30秒无结果断开 */
+  struct timeval timeout = {30, 0};
 
   host = gethostbyname(serv);
   sockfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -37,6 +37,45 @@ int mnl_net_conn(char *serv, int port) {
   }
 
   return sockfd;
+}
+
+int mnl_net_disconn(sockfd)
+{
+  close(sockfd);
+
+  return 0
+}
+
+int mnl_net_wt(int sockfd, char *cmd, char *res_buf)
+{
+  /* // Send cmd */
+  /* // 2 terminators */
+  /* uint16_t out_buf_len = sizeof(atm_mtpe_data_packet_t) - CMD_LEN + strlen(cmd) + 2; */
+
+  /* char out_buf[out_buf_len]; */
+  /* size_t out_size = atm_mtpe_build_data_packet(c, cmd, out_buf); */
+  /* if (send(c->sockfd, out_buf, out_size, MSG_NOSIGNAL)) { */
+  /*   // Response */
+  /*   if (atm_net_tcp_rd(c, res_buf) == 0) { */
+  /*     char *e = strrchr(res_buf, '\r'); */
+  /*     /\* Create start and end for res_buf *\/ */
+  /*     if (e != NULL) { */
+  /*       *(e+1) = '\0'; */
+  /*     } */
+  /*   } */
+  /*   else { */
+  /*     strcpy(res_buf, "RD FAILED!"); */
+  /*     perror("data tcp rd failed"); */
+  /*     c->err = -2; */
+  /*   } */
+  /* } */
+  /* else { */
+  /*   strcpy(res_buf, "WT FAILED!"); */
+  /*   perror("data tcp wt failed"); */
+  /*   c->err = -1; */
+  /* } */
+
+  return 0;
 }
 
 int mnl_net_rd(int sockfd, char *buf)
