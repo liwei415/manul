@@ -88,7 +88,7 @@ int _cbs_usra_build(char *buf, mnl_req_usra_t *mnl_req) {
 
   // header
   char plen[8];
-  sprintf(plen, "%d", (int)sizeof(mnl_req_usra_t));
+  sprintf(plen, "%d", REQ_LEN_USRA_BODY);
 
   mnl_cpy_str(mnl_req->flag, "CMBA", 4);
   mnl_cpy_int(mnl_req->len, plen, 4);
@@ -115,12 +115,11 @@ int _cbs_usra_build(char *buf, mnl_req_usra_t *mnl_req) {
   }
   mnl_cpy_str(mnl_req->plat_no, chd->valuestring, 30);
 
-
   mnl_cpy_str(mnl_req->plat_code, vars.plat_code, 10);
   mnl_cpy_str(mnl_req->comm_code, " ", 7);
 
-  char *vcode = calloc(2*strlen((char *)mnl_req->uid)+1, sizeof(char));
-  mnl_conv_hex(vcode, (char *)mnl_req->uid);
+  char *vcode = calloc(2 * REQ_LEN_USRA_BODY + 1, sizeof(char));
+  mnl_hex_enc((uint8_t *)mnl_req->uid, (uint8_t *)vcode, REQ_LEN_USRA_BODY);
   mnl_mac_enc(vcode, mnl_req->comm_vcode, vars.plat_key);
 
   goto done;
@@ -143,16 +142,37 @@ int _cbs_usra_dissect(char *buf, mnl_res_usra_t *mnl_res) {
 
 int _cbs_usra_return(evhtp_request_t *req, int err_no, mnl_res_usra_t *mnl_res)
 {
-  //json sample:
+  // vars
+  char f[256], t[256];
+
+  //json
   cJSON *j_ret = cJSON_CreateObject();
   cJSON *j_ret_info = cJSON_CreateObject();
   if(err_no == -1) {
     cJSON_AddBoolToObject(j_ret, "ret", 1);
-    cJSON_AddStringToObject(j_ret_info, "code", mnl_res->code);
-    cJSON_AddStringToObject(j_ret_info, "uid", mnl_res->uid);
+
+    memset(t, 0, 256);
+    strncpy(t, mnl_res->code, 7);
+    cJSON_AddStringToObject(j_ret_info, "code", t);
+
+    memset(t, 0, 256);
+    strncpy(t, mnl_res->uid, 20);
+    cJSON_AddStringToObject(j_ret_info, "uid", t);
+
+    memset(t, 0, 256);
+    strncpy(t, mnl_res->tuid, 30);
     cJSON_AddStringToObject(j_ret_info, "tuid", mnl_res->tuid);
-    cJSON_AddStringToObject(j_ret_info, "desc", mnl_res->desc);
-    cJSON_AddStringToObject(j_ret_info, "spare", mnl_res->spare);
+
+    memset(f, 0, 256);
+    memset(t, 0, 256);
+    mnl_hex_dec((uint8_t *)mnl_res->desc, (uint8_t *)f, 160);
+    mnl_iconv("GBK", "UTF-8", f, 200, t, 200);
+    cJSON_AddStringToObject(j_ret_info, "desc", t);
+
+    memset(t, 0, 256);
+    strncpy(t, mnl_res->spare, 200);
+    cJSON_AddStringToObject(j_ret_info, "spare", t);
+
     cJSON_AddItemToObject(j_ret, "info", j_ret_info);
   }
   else {
@@ -275,7 +295,7 @@ void mnl_cbs_usra_post(evhtp_request_t *req, void *arg)
 
   // 业务逻辑处理
 
-  // 1.build 请求包
+  // build 请求包
   mnl_req = calloc(1, sizeof(mnl_req_usra_t));
 
   int jerr = _cbs_usra_build(buff, mnl_req);
@@ -284,13 +304,27 @@ void mnl_cbs_usra_post(evhtp_request_t *req, void *arg)
     goto err;
   }
 
-  LOG_PRINT(LOG_DEBUG, "============input123123: %s===============", (char *)mnl_req);
+  LOG_PRINT(LOG_DEBUG, "============send: %s===============", (char *)mnl_req);
 
-  // 2.远端服务器交互
+  // open
+  int r;
   int sockfd = mnl_net_conn(vars.remote_ip, vars.remote_port);
 
-  // 3.dissect 返回包
+  // send
+  r = mnl_net_wt(sockfd, (char *)mnl_req, REQ_LEN_USRA);
+
+  LOG_PRINT(LOG_DEBUG, "============send end:%d===============", r);
+
+  // recv
   mnl_res = calloc(1, sizeof(mnl_res_usra_t));
+  r = mnl_net_rd(sockfd, (char *)mnl_res, RES_LEN_USRA);
+
+  LOG_PRINT(LOG_DEBUG, "============recv end:%d===============", r);
+
+  // disconn
+  mnl_net_disconn(sockfd);
+
+  LOG_PRINT(LOG_DEBUG, "============recv: %s===============", (char *)mnl_res);
 
   //业务逻辑处理成功
   err_no = -1;

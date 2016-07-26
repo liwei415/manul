@@ -48,15 +48,15 @@ max_size = 10*1024*1024
 
 --remote server config
 --绑定IP
-remote_ip = '127.0.0.1'
+remote_ip = '10.90.6.67'
 --端口
-remote_port = 9528
+remote_port = 9993
 
 --平台
-plat_code = '8888888822'
-plat_key = '9999999999999999'
+plat_code = '8888021655'
+plat_key = '1393BF6CE2353175'
 
 --ftp
-ftp_user = '8888888822'
-ftp_pass = '123123'
-ftp_port = '21'
+ftp_user = '8888021655'
+ftp_pass = 'Jy3Oi9wJ'
+ftp_port = 9955

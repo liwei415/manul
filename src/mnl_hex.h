@@ -6,6 +6,6 @@
 #include <string.h>
 
 void *mnl_hex_enc(uint8_t *ibuf, uint8_t *obuf, size_t ilen);
-void *mnl_hex_dec(uint8_t *ibuf, uint8_t *obuf);
+void *mnl_hex_dec(uint8_t *ibuf, uint8_t *obuf, size_t ilen);
 
 #endif

@@ -154,8 +154,3 @@ size_t mnl_cpy_hex(char *dst, char *src, size_t size) {
   free(hex);
   return (slen);
 }
-
-void mnl_conv_hex(char *obuf, char *ibuf) {
-
-  mnl_hex_enc((uint8_t *)ibuf, (uint8_t *)obuf, strlen(ibuf));
-}

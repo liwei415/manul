@@ -39,17 +39,32 @@ void *mnl_hex_enc(uint8_t *ibuf, uint8_t *obuf, size_t ilen) {
   return obuf;
 }
 
-void *mnl_hex_dec(uint8_t *ibuf, uint8_t *obuf) {
+/* void *mnl_hex_dec(uint8_t *ibuf, uint8_t *obuf) { */
+
+/*   uint8_t *p; */
+/*   int len, i; */
+
+/*   len = strlen((char *)ibuf) / 2; */
+/*   p = ibuf; */
+/*   for(i = 0; i < len; i++) { */
+/*     obuf[i] = (_hex_fchar(*p) << 4) | _hex_fchar(*(p+1)); */
+/*     p += 2; */
+/*   } */
+/*   obuf[len] = 0; */
+/*   return obuf; */
+/* } */
+
+void *mnl_hex_dec(uint8_t *ibuf, uint8_t *obuf, size_t ilen) {
 
   uint8_t *p;
-  int len, i;
+  int i;
 
-  len = strlen((char *)ibuf) / 2;
+  ilen = strlen((char *)ibuf) / 2;
   p = ibuf;
-  for(i = 0; i < len; i++) {
+  for(i = 0; i < (int)ilen; i++) {
     obuf[i] = (_hex_fchar(*p) << 4) | _hex_fchar(*(p+1));
     p += 2;
   }
-  obuf[len] = 0;
+  obuf[ilen] = 0;
   return obuf;
 }

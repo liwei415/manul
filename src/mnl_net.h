@@ -9,7 +9,8 @@
 #include "mnl_common.h"
 
 int mnl_net_conn(char *serv, int port);
-int mnl_net_rd(int sockfd, char *buf);
+int mnl_net_wt(int sockfd, char *ibuf, int ilen);
+int mnl_net_rd(int sockfd, char *obuf, int olen);
 int mnl_net_disconn(int sockfd);
 
 #endif
